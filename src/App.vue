@@ -133,6 +133,11 @@
         },
         methods: {
 
+        },
+        mounted() {
+            document.addEventListener('touchmove', function (event) {
+                if (event.scale !== 1) { event.preventDefault(); }
+            }, false);
         }
     }
 </script>
@@ -361,6 +366,9 @@
         }
         .link-block-footer{
             display: none;
+        }
+        .menu-bar{
+            padding-left: 0!important;
         }
     }
 

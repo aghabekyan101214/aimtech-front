@@ -7,6 +7,9 @@
                     <p class="text">Consistency and transparency are key to our delivery proces, so we follow the same
                         <br> framework regardless of the project.</p>
                 </div>
+                <div class="col-md-12 mb-3 mobile-navi">
+                    <p class="text-center text" v-html="def_name"/>
+                </div>
                 <div class="col-md-12 slider-points-cont">
                     <div v-for="(point, i) in points" class="point-box" @click="change(i)">
                         <div :class="'number-box mb-3 ' + point.class">
@@ -36,7 +39,9 @@
                             </div>
                         </slide>
                         <slide>
-                            <img class="col-md-3 p-0 img-responsive" src="../../assets/images/pre-discovery.jpg" alt="a">
+                            <div class="col-lg-5 col-md-5 p-0">
+                                <img src="../../assets/images/pre-discovery.jpg" alt="a">
+                            </div>
                             <div class="col-md-5 slider-text-cont pl-lg-5">
                                 <p class="slider-title mb-3">Pre-Discovery</p>
                                 <p class="slider-text">Consistency and Transparency Are Key To Our Delivery Process, So We Follow The Same Framework Regardless Of The Project</p>
@@ -47,7 +52,9 @@
                             </div>
                         </slide>
                         <slide>
-                            <img class="col-md-3 p-0 img-responsive" src="../../assets/images/pre-discovery.jpg" alt="a">
+                            <div class="col-lg-5 col-md-5 p-0">
+                                <img src="../../assets/images/pre-discovery.jpg" alt="a">
+                            </div>
                             <div class="col-md-5 slider-text-cont pl-lg-5">
                                 <p class="slider-title mb-3">Pre-Discovery</p>
                                 <p class="slider-text">Consistency and Transparency Are Key To Our Delivery Process, So We Follow The Same Framework Regardless Of The Project</p>
@@ -58,7 +65,9 @@
                             </div>
                         </slide>
                         <slide>
-                            <img class="col-md-3 p-0 img-responsive" src="../../assets/images/pre-discovery.jpg" alt="a">
+                            <div class="col-lg-5 col-md-5 p-0">
+                                <img src="../../assets/images/pre-discovery.jpg" alt="a">
+                            </div>
                             <div class="col-md-5 slider-text-cont pl-lg-5">
                                 <p class="slider-title mb-3">Pre-Discovery</p>
                                 <p class="slider-text">Consistency and Transparency Are Key To Our Delivery Process, So We Follow The Same Framework Regardless Of The Project</p>
@@ -69,7 +78,9 @@
                             </div>
                         </slide>
                         <slide>
-                            <img class="col-md-3 p-0 img-responsive" src="../../assets/images/pre-discovery.jpg" alt="a">
+                            <div class="col-lg-5 col-md-5 p-0">
+                                <img src="../../assets/images/pre-discovery.jpg" alt="a">
+                            </div>
                             <div class="col-md-5 slider-text-cont pl-lg-5">
                                 <p class="slider-title mb-3">Pre-Discovery</p>
                                 <p class="slider-text">Consistency and Transparency Are Key To Our Delivery Process, So We Follow The Same Framework Regardless Of The Project</p>
@@ -110,15 +121,7 @@
                     { variant: 'primary', value: 20 },
                     { variant: 'empty', value: 80 },
                 ],
-                sliders: [
-                    {img: "/pre-discovery.jpg", data: [
-                            {title: "Pre-Discovery", text: "Consistency and Transparency Are Key To Our Delivery Process, So We Follow The Same Framework Regardless Of The Project"},
-                            {title: "Pre-Discovery", text: "Consistency and Transparency Are Key To Our Delivery Process, So We Follow The Same Framework Regardless Of The Project"},
-                            {title: "Pre-Discovery", text: "Consistency and Transparency Are Key To Our Delivery Process, So We Follow The Same Framework Regardless Of The Project"},
-                        ]
-                    },
-
-                ]
+                def_name: 'Requirement <br> Engineering'
             }
         },
         methods: {
@@ -131,8 +134,10 @@
                     e.class = "";
                     if(n == i) {
                         e.class = "active";
+                        this.def_name = e.name;
                     }
                 });
+
                 this.$refs.carousel.goToPage(n)
             },
         },
@@ -145,6 +150,9 @@
     }
     .bg-primary{
         background-color: #36a8e0!important;
+    }
+    .mobile-navi{
+        display: none;
     }
     .bg-empty{
         background-color: #e9ecef!important;
@@ -169,7 +177,7 @@
     }
     .point-box p{
         font-family: 'robotoregular', sans-serif;
-        font-size: 26px;
+        font-size: 18px;
     }
     .point-box{
         display: flex;
@@ -198,7 +206,8 @@
         justify-content: space-around;
     }
     .slider-cont img{
-        height: 300px;
+        height: 100%;
+        width: 100%;
     }
     .slider-text-cont p{
         font-size: 20px;
@@ -219,14 +228,25 @@
         display: flex;
     }
     @media all and (max-width: 460px){
-        .slider-points-cont {
-            display: none;
-        }
-        .slider-points-cont + div{
-            display: none;
-        }
+        /*.slider-points-cont {*/
+        /*    display: none;*/
+        /*}*/
+        /*.slider-points-cont + div{*/
+        /*    display: none;*/
+        /*}*/
         .slider-text-cont{
             margin-top: 20px;
+            padding-right: 55px;
+        }
+        .point-box > p{
+            display: none;
+        }
+        .mobile-navi {
+            display: block;
+        }
+        .mobile-navi p{
+            color: #36a8e0;
+            font-family: robotoregular, sans-serif;
         }
     }
 </style>

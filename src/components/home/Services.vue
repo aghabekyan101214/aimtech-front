@@ -91,8 +91,12 @@
     .icon-cont img {
         height: 50px;
     }
+    .service-block h3 {
+        color: #484848;
+        transition: .3s;
+    }
     .section-second{
-        padding-top: 70px;
+        padding-top: 40px;
         padding-bottom: 50px;
     }
     .icon-white{
@@ -109,7 +113,7 @@
         height: 42px!important;
     }
     .service-block{
-        padding: 20px 10px;
+        padding: 20px 15px;
         transition: .3s;
         position: relative;
         overflow: hidden;
@@ -134,10 +138,13 @@
     .service-block:hover {
         background-color: #37a7e0;
         transition: .3s;
+    }
+    .service-block:hover h3 {
         color: white;
+        transition: .3s;
     }
     .row-services{
-        padding-top: 100px;
+        padding-top: 50px;
 
     }
     /*.row-services > div{*/

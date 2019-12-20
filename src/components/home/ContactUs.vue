@@ -83,6 +83,7 @@
         height: auto;
         min-height: 855px;
         background-image: url("../../assets/images/contact-us.jpg");
+        background-color: #326d97;
         background-size: cover;
         padding-bottom: 15px;
     }
@@ -251,6 +252,9 @@
         }
         .send-part{
             text-align: center;
+        }
+        .section-sixth {
+            background-image: none;
         }
     }
 </style>

@@ -5,7 +5,7 @@
                 <div class="row section1-text-row">
                     <div class="section1-text-container col-md-9">
                         <h1>Helping Your <br> <span class="text-blue">Business Grow</span></h1>
-                        <p class="mt-5 section-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequatur deserunt dolorem doloremque eos expedita itaque libero modi nam non nostrum obcaecati, placeat quidem sapiente ullam vel velit, veniam voluptas.</p>
+                        <p class="mt-lg-5 section-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequatur deserunt dolorem doloremque eos expedita itaque libero modi nam non nostrum obcaecati, placeat quidem sapiente ullam vel velit, veniam voluptas.</p>
                     </div>
                     <div class="col-md-12">
                         <router-link to="/" class="btn rounded-btn">Our Projects</router-link>
@@ -52,12 +52,12 @@
     }
     .section1-text-container h1{
         color: #ffffff;
-        font-size: 65px;
+        font-size: 52px;
         letter-spacing: 5px;
         font-family: 'robotoregular', sans-serif;
     }
     .section1-text-container span{
-        font-size: 70px;
+        font-size: 60px;
         letter-spacing: 5px;
         text-transform: uppercase;
     }
@@ -128,7 +128,7 @@
     }
     @media all and (max-width: 460px) {
         .section-text {
-            font-size: 18px;
+            font-size: 14px;
         }
         .VueCarousel-pagination {
             position: relative!important;
