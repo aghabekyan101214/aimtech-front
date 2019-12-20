@@ -44,26 +44,24 @@
 
                     <label class="space"></label>
 
-                    <label class="fileContainer">
+                    <label class="fileContainer col-md-6">
                         Add an attachment
-                        <input type="file"/>
+                        <input type="file" class="file"/>
                     </label>
 
-                    <label class="space"></label>
-
-
-                    <div class="checkbox-part">
+                    <div class="checkbox-part col-md-12">
                         <input type="checkbox" id="check">
                         <label for="check">I want to receive and updates once in a while</label>
                     </div>
-
-                    <label class="space"></label>
-                    <button class="send btn btn-primary">Send Message</button>
-                    <label class="space"></label>
+                    <div class="send-part col-md-12">
+                        <button class="send btn btn-primary">Send Message</button>
+                    </div>
                 </div>
             </div>
             <div class="map col-md-4">
-                <iframe src="https://www.google.com/maps/embed?q=40.200048,44.491261&pb=!1m10!1m8!1m3!1d17240.15900856154!2d44.49356229888449!3d40.19441645152406!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1576829646523!5m2!1sen!2s" width="600" height="600" frameborder="0" style="border:5px solid #37a8e0; border-radius: 12px;"></iframe>
+                <iframe src="https://www.google.com/maps/embed?q=40.200048,44.491261&pb=!1m10!1m8!1m3!1d17240.15900856154!2d44.49356229888449!3d40.19441645152406!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1576829646523!5m2!1sen!2s"
+                        width="100%" height="600" frameborder="0"
+                        style="border:5px solid #37a8e0; border-radius: 12px;"></iframe>
             </div>
         </div>
     </section>
@@ -82,24 +80,27 @@
         font-weight: 200;
     }
     .section-sixth {
-        height: 855px;
+        height: auto;
+        min-height: 855px;
         background-image: url("../../assets/images/contact-us.jpg");
         background-size: cover;
     }
     .contact {
+        width: 100%;
         padding-top: 25px;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
-    .map{
+    .map {
         padding-top: 100px;
+        margin: 0;
     }
     .form {
         height: auto;
     }
-    .form-part{
+    .form-part {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -116,7 +117,7 @@
         width: 100%;
         max-width: 400px;
     }
-    .space{
+    .space {
         position: relative;
         margin: auto;
         width: 100%;
@@ -186,24 +187,19 @@
     .fileContainer [type=file] {
         cursor: inherit;
         display: block;
-        font-size: 999px;
         filter: alpha(opacity=0);
-        min-height: 100%;
-        min-width: 100%;
         opacity: 0;
         position: absolute;
-        right: 0;
-        text-align: right;
-        top: 0;
+        left: 0;
+        text-align: left;
     }
 
     /*checkbox part*/
     .checkbox-part {
-        display: block;
-        padding: 0 0 25px 25px;
+        /*display: block;*/
+        /*padding: 0 0 25spx 25px;*/
     }
     .checkbox-part input {
-        /*padding: 10px;*/
         height: 50px;
         width: 50px;
         display: none;
@@ -216,7 +212,7 @@
         letter-spacing: 2px;
     }
     .checkbox-part label:before {
-        content:'';
+        content: '';
         -webkit-appearance: none;
         background-color: transparent;
         border: 2px solid white;
@@ -241,8 +237,10 @@
     }
 
     /*send button part */
-    .send{
-        margin: 25px;
+    .send-part{
+        padding-top: 50px;
+    }
+    .send {
         background-color: #37a8e0;
         border: 1px solid #37a8e0;
         font-size: 30px;
