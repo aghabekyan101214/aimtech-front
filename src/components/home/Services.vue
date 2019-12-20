@@ -102,10 +102,6 @@
     .icon-blue{
         transition: .3s;
     }
-    .container-fluid {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
     .icon-cont{
         margin-bottom: 10px;
     }
@@ -144,9 +140,9 @@
         padding-top: 100px;
 
     }
-    .row-services > div{
-        padding: 0 50px;
-    }
+    /*.row-services > div{*/
+    /*    padding: 0 50px;*/
+    /*}*/
     .service-block hr {
         margin: 0!important;
         position: relative;

@@ -24,7 +24,6 @@
 
 <style scoped>
     .section-fourth{
-        padding: 70px 0;
         background-color: #f0f0f0;
     }
     .title{
@@ -33,8 +32,8 @@
         letter-spacing: 2px;
         color: #011f34;
     }
-    .text-cont{
-        padding-left: 130px;
-        padding-right: 30px;
-    }
+    /*.text-cont{*/
+    /*    padding-left: 130px;*/
+    /*    padding-right: 30px;*/
+    /*}*/
 </style>

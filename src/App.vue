@@ -33,38 +33,94 @@
                 </header>
             </div>
         </div>
-        <router-view></router-view>
-        <div class="footer">
-            <div class="container">
+        <router-view/>
+        <section class="footer">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="footer-content col-md-12">
-                        <div class="text-center mb-5">
-                            <img class="logo" src="./assets/images/logo.png" alt="Aimtech logo">
+                    <div class="col-md-3">
+                        <img src="./assets/images/logo-new.png" class="logo" alt="Aimtech Logo">
+                        <div class="col-md-12 pt-5 pl-0">
+                            <p>Hakob Hakobyan 3, Yerevan, Armenia</p>
+                            <p>+374 55 55 77 44</p>
                         </div>
-                        <div class="info-container">
-                            <div>
-                                <p class="text-right">Hakob Hakobyan 3 </p>
-                                <p class="text-right">Yerevan, Armenia, 0014 </p>
-                            </div>
-                            <div>
-                                <p class="left">+374 55 023 420</p>
-                                <p class="text-left">info@aimtech.am, sales@aimtech.am</p>
-                            </div>
+                        <div class="col-md-12 pt-5 pl-0 social-buttons">
+                            <img class="mr-3" src="./assets/images/facebook.png" alt="Aimtech facebook logo">
+                            <img src="./assets/images/linkedin.png" alt="Aimtech linkedin logo">
                         </div>
-
+                    </div>
+                    <div class="col-md-2">
+                        <a class="link-title" href="#">Company</a>
+                        <div class="col-md-12 pl-0 pt-5 link-block">
+                            <p>
+                                <a href="#">About Us</a>
+                            </p>
+                            <p>
+                                <a href="#">Our Team</a>
+                            </p>
+                            <p>
+                                <a href="#">What We Do</a>
+                            </p>
+                            <p>
+                                <a href="#">Careers</a>
+                            </p>
+                            <p>
+                                <a href="#">Contact Us</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <a class="link-title" href="#">Services</a>
+                        <div class="col-md-12 pl-0 pt-5 link-block">
+                            <p>
+                                <a href="#">About Us</a>
+                            </p>
+                            <p>
+                                <a href="#">Our Team</a>
+                            </p>
+                            <p>
+                                <a href="#">What We Do</a>
+                            </p>
+                            <p>
+                                <a href="#">Careers</a>
+                            </p>
+                            <p>
+                                <a href="#">Contact Us</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <a class="link-title" href="#">Technologies</a>
+                        <div class="col-md-12 pl-0 pt-5 link-block">
+                            <p>
+                                <a href="#">About Us</a>
+                            </p>
+                            <p>
+                                <a href="#">Our Team</a>
+                            </p>
+                            <p>
+                                <a href="#">What We Do</a>
+                            </p>
+                            <p>
+                                <a href="#">Careers</a>
+                            </p>
+                            <p>
+                                <a href="#">Contact Us</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="socials">
-            <div class="container">
-                <div class="row">
-                    <img class="mr-2" src="./assets/images/facebook.png" alt="Aimtech logo">
-                    <img src="./assets/images/linkedin.png" alt="Aimtech logo">
+        </section>
+        <section class="privacy-footer">
+            <div class="container-fluid footer-cont">
+                <p class="m-0">&copy; 2018-2020 AIMTECH, All rights reserved</p>
+                <div class="link-block-footer">
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Site Map</a>
                 </div>
             </div>
-        </div>
-        <!-- Footer -->
+        </section>
     </div>
 </template>
 
@@ -122,6 +178,10 @@
         font-style: normal;
 
     }
+    .container-fluid{
+        padding-left: 100px!important;
+        padding-right: 100px!important;
+    }
     h2, p{
         font-family: 'robotolight', sans-serif;
     }
@@ -135,7 +195,7 @@
         overflow-x: hidden;
     }
     .logo{
-        height: 85px;
+        height: 50px;
     }
     .header ul {
         margin-bottom: 0!important;
@@ -170,20 +230,6 @@
     .container.position-absolute{
         left: 50%;
         transform: translateX(-50%);
-    }
-    .footer{
-        padding-top: 80px;
-        width: 100%;
-        height: 300px;
-        background-color: #004a82;
-    }
-    .footer-content{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .footer-content p{
-        color: #fff;
     }
     .info-container{
         display: flex;
@@ -223,6 +269,49 @@
     }
     .nav-item a:hover + .dot {
         display: inline-block!important;
+    }
+    .footer{
+        padding: 50px 0;
+        background-color: #f0f0f0;
+    }
+    .footer .logo{
+        height: 43px;
+    }
+    .footer p{
+        letter-spacing: 2px;
+        color: #1e3e55;
+    }
+    .footer .link-title {
+        letter-spacing: 2px;
+        color: #36a8e0;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #36a8e0;
+        border-bottom-right-radius: 2px;
+        border-bottom-left-radius: 2px;
+        font-family: robotoregular, sans-serif;
+        font-size: 20px;
+    }
+    a:hover{
+        text-decoration: none!important;
+    }
+    .link-block p > a{
+        color: #1e3e55;
+    }
+    .footer .social-buttons img{
+        height: 40px;
+    }
+    .privacy-footer{
+        height: 80px;
+    }
+    .footer-cont{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    .footer-cont a, p{
+        font-family: robotoregular, sans-serif;
+        letter-spacing: 2px;
     }
 
     @media all and (max-width: 1366px) {

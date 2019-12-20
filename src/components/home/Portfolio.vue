@@ -1,6 +1,6 @@
 <template>
     <section class="section-third">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="mirr-cont">
                     <h2 class="services main-m">Portfolio</h2>

@@ -21,12 +21,62 @@
                     </b-progress>
                 </div>
                 <div class="col-md-12 mt-5 slider-cont">
-                    <carousel :perPage="1" :paginationEnabled="false">
+                    <carousel :perPage="1" :paginationEnabled="false" :touchDrag="false" :mouseDrag="false" ref="carousel">
                         <slide>
-                            <img class="col-md-6 p-0 img-responsive" src="../../assets/images/pre-discovery.jpg" alt="a">
-                            <div>
-                                <h2 class="slider-title mb-3">Doctor's Application</h2>
-                                <p class="slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium adipisci animi assumenda consectetur deserunt dolorem ducimus eum, id ipsa, ipsam iusto minus modi nemo nobis quae repellat sit voluptates?</p>
+                            <div class="col-lg-5 col-md-5 p-0">
+                                <img src="../../assets/images/pre-discovery.jpg" alt="a">
+                            </div>
+                            <div class="col-md-5 slider-text-cont pl-5">
+                                <p class="slider-title mb-3">Pre-Discovery</p>
+                                <p class="slider-text">Consistency and Transparency Are Key To Our Delivery Process, So We Follow The Same Framework Regardless Of The Project</p>
+                                <p class="slider-title mb-3">Pre-Discovery</p>
+                                <p class="slider-text">Consistency and Transparency Are Key To Our Delivery Process, So We Follow The Same Framework Regardless Of The Project</p>
+                                <p class="slider-title mb-3">Pre-Discovery</p>
+                                <p class="slider-text">Consistency and Transparency Are Key To Our Delivery Process, So We Follow The Same Framework Regardless Of The Project</p>
+                            </div>
+                        </slide>
+                        <slide>
+                            <img class="col-md-3 p-0 img-responsive" src="../../assets/images/pre-discovery.jpg" alt="a">
+                            <div class="col-md-5 slider-text-cont pl-5">
+                                <p class="slider-title mb-3">Pre-Discovery</p>
+                                <p class="slider-text">Consistency and Transparency Are Key To Our Delivery Process, So We Follow The Same Framework Regardless Of The Project</p>
+                                <p class="slider-title mb-3">Pre-Discovery</p>
+                                <p class="slider-text">Consistency and Transparency Are Key To Our Delivery Process, So We Follow The Same Framework Regardless Of The Project</p>
+                                <p class="slider-title mb-3">Pre-Discovery</p>
+                                <p class="slider-text">Consistency and Transparency Are Key To Our Delivery Process, So We Follow The Same Framework Regardless Of The Project</p>
+                            </div>
+                        </slide>
+                        <slide>
+                            <img class="col-md-3 p-0 img-responsive" src="../../assets/images/pre-discovery.jpg" alt="a">
+                            <div class="col-md-5 slider-text-cont pl-5">
+                                <p class="slider-title mb-3">Pre-Discovery</p>
+                                <p class="slider-text">Consistency and Transparency Are Key To Our Delivery Process, So We Follow The Same Framework Regardless Of The Project</p>
+                                <p class="slider-title mb-3">Pre-Discovery</p>
+                                <p class="slider-text">Consistency and Transparency Are Key To Our Delivery Process, So We Follow The Same Framework Regardless Of The Project</p>
+                                <p class="slider-title mb-3">Pre-Discovery</p>
+                                <p class="slider-text">Consistency and Transparency Are Key To Our Delivery Process, So We Follow The Same Framework Regardless Of The Project</p>
+                            </div>
+                        </slide>
+                        <slide>
+                            <img class="col-md-3 p-0 img-responsive" src="../../assets/images/pre-discovery.jpg" alt="a">
+                            <div class="col-md-5 slider-text-cont pl-5">
+                                <p class="slider-title mb-3">Pre-Discovery</p>
+                                <p class="slider-text">Consistency and Transparency Are Key To Our Delivery Process, So We Follow The Same Framework Regardless Of The Project</p>
+                                <p class="slider-title mb-3">Pre-Discovery</p>
+                                <p class="slider-text">Consistency and Transparency Are Key To Our Delivery Process, So We Follow The Same Framework Regardless Of The Project</p>
+                                <p class="slider-title mb-3">Pre-Discovery</p>
+                                <p class="slider-text">Consistency and Transparency Are Key To Our Delivery Process, So We Follow The Same Framework Regardless Of The Project</p>
+                            </div>
+                        </slide>
+                        <slide>
+                            <img class="col-md-3 p-0 img-responsive" src="../../assets/images/pre-discovery.jpg" alt="a">
+                            <div class="col-md-5 slider-text-cont pl-5">
+                                <p class="slider-title mb-3">Pre-Discovery</p>
+                                <p class="slider-text">Consistency and Transparency Are Key To Our Delivery Process, So We Follow The Same Framework Regardless Of The Project</p>
+                                <p class="slider-title mb-3">Pre-Discovery</p>
+                                <p class="slider-text">Consistency and Transparency Are Key To Our Delivery Process, So We Follow The Same Framework Regardless Of The Project</p>
+                                <p class="slider-title mb-3">Pre-Discovery</p>
+                                <p class="slider-text">Consistency and Transparency Are Key To Our Delivery Process, So We Follow The Same Framework Regardless Of The Project</p>
                             </div>
                         </slide>
                     </carousel>
@@ -50,7 +100,7 @@
             return {
                 points: [
                     {name: "Requirement <br> Engineering", class: "active"},
-                    {name: "Protoyping <br> and UXD", class: ""},
+                    {name: "Prototyping <br> and UXD", class: ""},
                     {name: "Development and Solution <br> Implementation", class: ""},
                     {name: "QA and Testing", class: ""},
                     {name: "Maintenance and <br> Support", class: ""},
@@ -83,18 +133,22 @@
                         e.class = "active";
                     }
                 });
+                this.$refs.carousel.goToPage(n)
             },
-            getImgUrl(pic) {
-                return require('../../assets/images/'+pic)
+            get(){
+                console.log('s')
             }
+
+        },
+        mounted() {
+            console.log(this.$refs.carousel)
         }
+
     }
 </script>
 
 <style scoped>
-    .section-fifth{
-        padding: 50px 100px;
-    }
+
     .bg-primary{
         background-color: #36a8e0!important;
     }
@@ -151,5 +205,20 @@
     }
     .slider-cont img{
         height: 300px;
+    }
+    .slider-text-cont p{
+        font-size: 20px;
+        font-family: 'robotoregular', sans-serif;
+    }
+    .slider-title{
+        color: #36a8e0;
+        margin-bottom: 3px!important;
+    }
+    .slider-text{
+        color: #1e3e55;
+        font-size: 19px!important;
+    }
+    .VueCarousel-slide{
+        display: flex;
     }
 </style>
