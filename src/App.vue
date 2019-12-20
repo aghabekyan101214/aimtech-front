@@ -37,7 +37,7 @@
         <section class="footer">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 ft-first-part">
                         <img src="./assets/images/logo-new.png" class="logo" alt="Aimtech Logo">
                         <div class="col-md-12 pt-5 pl-0">
                             <p>Hakob Hakobyan 3, Yerevan, Armenia</p>
@@ -115,9 +115,9 @@
             <div class="container-fluid footer-cont">
                 <p class="m-0">&copy; 2018-2020 AIMTECH, All rights reserved</p>
                 <div class="link-block-footer">
-                    <a href="#">Terms & Conditions</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Site Map</a>
+                    <a class="mr-5" href="#">Terms & Conditions</a>
+                    <a class="mr-5" href="#">Privacy Policy</a>
+                    <a class="mr-5" href="#">Site Map</a>
                 </div>
             </div>
         </section>
@@ -309,9 +309,10 @@
         align-items: center;
         height: 100%;
     }
-    .footer-cont a, p{
+    .footer-cont a, .footer-cont p{
         font-family: robotoregular, sans-serif;
         letter-spacing: 2px;
+        color: #212529;
     }
 
     @media all and (max-width: 1366px) {
@@ -326,6 +327,40 @@
         }
         .header ul li:nth-child(1) {
             margin-top: 15px;
+        }
+    }
+    @media all and (max-width: 460px) {
+        .menu-bar{
+            top: 0;
+        }
+        .logo{
+            height: 40px;
+        }
+        .section1-text-container h1{
+            font-size: 40px!important;
+        }
+        .section1-text-container span{
+            font-size: 40px!important;
+        }
+        .header ul li a{
+            font-size: 20px;
+        }
+        .header ul li{
+            margin-bottom: 10px;
+            /*margin-top: 5px;*/
+        }
+        .container-fluid{
+            padding-left: 15px!important;
+            padding-right: 15px!important;
+        }
+        .ft-first-part{
+            text-align: center;
+        }
+        .footer-cont p, .footer-cont a{
+            font-size: 14px;
+        }
+        .link-block-footer{
+            display: none;
         }
     }
 

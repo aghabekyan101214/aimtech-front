@@ -1,7 +1,7 @@
 <template>
     <section class="section-sixth container-fluid">
         <div class="contact">
-            <div class="form col-md-6">
+            <div class="form col-md-6 pl-0">
                 <h3>Contact Us</h3>
                 <div class="form-part">
                     <label for="full_name" class="inp">
@@ -54,7 +54,7 @@
                         <label for="check">I want to receive and updates once in a while</label>
                     </div>
                     <div class="send-part col-md-12">
-                        <button class="send btn btn-primary">Send Message</button>
+                        <button class="rounded-btn send btn btn-primary">Send Message</button>
                     </div>
                 </div>
             </div>
@@ -84,13 +84,14 @@
         min-height: 855px;
         background-image: url("../../assets/images/contact-us.jpg");
         background-size: cover;
+        padding-bottom: 15px;
     }
     .contact {
         width: 100%;
         padding-top: 25px;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         flex-wrap: wrap;
     }
     .map {
@@ -116,6 +117,7 @@
         padding-top: 50px;
         width: 100%;
         max-width: 400px;
+        margin-left: 0;
     }
     .space {
         position: relative;
@@ -240,11 +242,15 @@
     .send-part{
         padding-top: 50px;
     }
-    .send {
-        background-color: #37a8e0;
-        border: 1px solid #37a8e0;
-        font-size: 30px;
-        width: 250px;
-        height: 80px;
+    .form > h3 {
+        font-size: 35px;
+    }
+    @media all and (max-width: 460px) {
+        .map{
+            display: none;
+        }
+        .send-part{
+            text-align: center;
+        }
     }
 </style>

@@ -153,4 +153,15 @@
         border-radius: 5px;
         border-top: none;
     }
+    @media all and (max-width: 460px) {
+        .main-m{
+            font-size: 40px;
+        }
+        .mirr-cont p{
+            font-size: 20px;
+        }
+        .row-services{
+            padding-top: 0;
+        }
+    }
 </style>

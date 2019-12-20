@@ -82,13 +82,13 @@
     }
     .mirr-cont p{
         color: #6b6b6b;
-        font-size: 25px;
+        font-size: 20px;
     }
     .main-m{
         position: relative;
         z-index: 2;
         color: black;
-        font-size: 50px;
+        font-size: 35px;
         text-align: center;
         width: 100%;
         letter-spacing: 5px;
@@ -111,7 +111,7 @@
     }
     .text-cont p{
         color: #1e3e55;
-        font-size: 22px;
+        font-size: 18px;
     }
 
     @media all and (max-width: 1366px) {
@@ -125,5 +125,20 @@
             font-size: 55px;
         }
 
+    }
+    @media all and (max-width: 460px) {
+        .section-text {
+            font-size: 18px;
+        }
+        .VueCarousel-pagination {
+            position: relative!important;
+            bottom: 0!important;
+        }
+        .VueCarousel h2{
+            text-align: center;
+        }
+        .VueCarousel-slide{
+            flex-direction: column;
+        }
     }
 </style>

@@ -25,10 +25,11 @@
 <style scoped>
     .section-fourth{
         background-color: #f0f0f0;
+        padding: 50px 0;
     }
     .title{
         text-align: center;
-        font-size: 40px;
+        font-size: 28px;
         letter-spacing: 2px;
         color: #011f34;
     }

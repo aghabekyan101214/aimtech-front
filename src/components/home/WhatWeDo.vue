@@ -26,7 +26,7 @@
                             <div class="col-lg-5 col-md-5 p-0">
                                 <img src="../../assets/images/pre-discovery.jpg" alt="a">
                             </div>
-                            <div class="col-md-5 slider-text-cont pl-5">
+                            <div class="col-md-5 slider-text-cont pl-lg-5">
                                 <p class="slider-title mb-3">Pre-Discovery</p>
                                 <p class="slider-text">Consistency and Transparency Are Key To Our Delivery Process, So We Follow The Same Framework Regardless Of The Project</p>
                                 <p class="slider-title mb-3">Pre-Discovery</p>
@@ -37,7 +37,7 @@
                         </slide>
                         <slide>
                             <img class="col-md-3 p-0 img-responsive" src="../../assets/images/pre-discovery.jpg" alt="a">
-                            <div class="col-md-5 slider-text-cont pl-5">
+                            <div class="col-md-5 slider-text-cont pl-lg-5">
                                 <p class="slider-title mb-3">Pre-Discovery</p>
                                 <p class="slider-text">Consistency and Transparency Are Key To Our Delivery Process, So We Follow The Same Framework Regardless Of The Project</p>
                                 <p class="slider-title mb-3">Pre-Discovery</p>
@@ -48,7 +48,7 @@
                         </slide>
                         <slide>
                             <img class="col-md-3 p-0 img-responsive" src="../../assets/images/pre-discovery.jpg" alt="a">
-                            <div class="col-md-5 slider-text-cont pl-5">
+                            <div class="col-md-5 slider-text-cont pl-lg-5">
                                 <p class="slider-title mb-3">Pre-Discovery</p>
                                 <p class="slider-text">Consistency and Transparency Are Key To Our Delivery Process, So We Follow The Same Framework Regardless Of The Project</p>
                                 <p class="slider-title mb-3">Pre-Discovery</p>
@@ -59,7 +59,7 @@
                         </slide>
                         <slide>
                             <img class="col-md-3 p-0 img-responsive" src="../../assets/images/pre-discovery.jpg" alt="a">
-                            <div class="col-md-5 slider-text-cont pl-5">
+                            <div class="col-md-5 slider-text-cont pl-lg-5">
                                 <p class="slider-title mb-3">Pre-Discovery</p>
                                 <p class="slider-text">Consistency and Transparency Are Key To Our Delivery Process, So We Follow The Same Framework Regardless Of The Project</p>
                                 <p class="slider-title mb-3">Pre-Discovery</p>
@@ -70,7 +70,7 @@
                         </slide>
                         <slide>
                             <img class="col-md-3 p-0 img-responsive" src="../../assets/images/pre-discovery.jpg" alt="a">
-                            <div class="col-md-5 slider-text-cont pl-5">
+                            <div class="col-md-5 slider-text-cont pl-lg-5">
                                 <p class="slider-title mb-3">Pre-Discovery</p>
                                 <p class="slider-text">Consistency and Transparency Are Key To Our Delivery Process, So We Follow The Same Framework Regardless Of The Project</p>
                                 <p class="slider-title mb-3">Pre-Discovery</p>
@@ -135,20 +135,14 @@
                 });
                 this.$refs.carousel.goToPage(n)
             },
-            get(){
-                console.log('s')
-            }
-
         },
-        mounted() {
-            console.log(this.$refs.carousel)
-        }
-
     }
 </script>
 
 <style scoped>
-
+    .section-fifth{
+        padding: 50px 0;
+    }
     .bg-primary{
         background-color: #36a8e0!important;
     }
@@ -157,7 +151,7 @@
     }
     .title{
         text-align: center;
-        font-size: 50px;
+        font-size: 40px;
     }
     .progress{
         border-radius: 10px;
@@ -196,7 +190,7 @@
     }
     .text{
         text-align: center;
-        font-size: 24px!important;
+        font-size: 20px!important;
         letter-spacing: 2px;
     }
     .slider-points-cont{
@@ -210,6 +204,9 @@
         font-size: 20px;
         font-family: 'robotoregular', sans-serif;
     }
+    .slider-text-cont{
+        padding-left: 0;
+    }
     .slider-title{
         color: #36a8e0;
         margin-bottom: 3px!important;
@@ -220,5 +217,16 @@
     }
     .VueCarousel-slide{
         display: flex;
+    }
+    @media all and (max-width: 460px){
+        .slider-points-cont {
+            display: none;
+        }
+        .slider-points-cont + div{
+            display: none;
+        }
+        .slider-text-cont{
+            margin-top: 20px;
+        }
     }
 </style>

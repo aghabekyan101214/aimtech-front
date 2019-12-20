@@ -96,5 +96,13 @@
     p{
         font-family: 'robotolight', sans-serif;
     }
+    @media all and (max-width: 460px) {
+        .slider-containter {
+            padding: 15px;
+        }
+        .VueCarousel-slide {
+            flex-direction: column;
+        }
+    }
 
 </style>
