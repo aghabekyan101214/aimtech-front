@@ -18,6 +18,7 @@
         <Portfolio/>
         <About/>
         <WhatWeDo/>
+        <ContactUs/>
 
     </div>
 </template>
@@ -27,6 +28,7 @@
     import Portfolio from "../components/home/Portfolio";
     import About from "../components/home/About";
     import WhatWeDo from "../components/home/WhatWeDo";
+    import ContactUs from "../components/home/ContactUs";
 
     export default {
         name: 'home',
@@ -34,7 +36,8 @@
             WhatWeDo,
             Services,
             Portfolio,
-            About
+            About,
+            ContactUs
         }
     }
 </script>

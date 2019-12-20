@@ -1,0 +1,252 @@
+<template>
+    <section class="section-sixth container-fluid">
+        <div class="contact">
+            <div class="form col-md-6">
+                <h3>Contact Us</h3>
+                <div class="form-part">
+                    <label for="full_name" class="inp">
+                        <input type="text" id="full_name" placeholder=" ">
+                        <span class="label">Full Name</span>
+                        <span class="border"></span>
+                    </label>
+
+                    <label for="phone" class="inp">
+                        <input type="text" id="phone" placeholder=" ">
+                        <span class="label">Phone Number</span>
+                        <span class="border"></span>
+                    </label>
+
+                    <label for="email" class="inp">
+                        <input type="text" id="email" placeholder=" ">
+                        <span class="label">Email</span>
+                        <span class="border"></span>
+                    </label>
+
+                    <label for="country" class="inp">
+                        <input type="text" id="country" placeholder=" ">
+                        <span class="label">Country</span>
+                        <span class="border"></span>
+                    </label>
+
+                    <label for="company" class="inp">
+                        <input type="text" id="company" placeholder=" ">
+                        <span class="label">Company</span>
+                        <span class="border"></span>
+                    </label>
+
+                    <label class="space"></label>
+
+                    <label for="message" class="inp message">
+                        <input type="text" id="message" placeholder=" ">
+                        <span class="label">Message</span>
+                        <span class="border"></span>
+                    </label>
+
+                    <label class="space"></label>
+
+                    <label class="fileContainer">
+                        Add an attachment
+                        <input type="file"/>
+                    </label>
+
+                    <label class="space"></label>
+
+
+                    <div class="checkbox-part">
+                        <input type="checkbox" id="check">
+                        <label for="check">I want to receive and updates once in a while</label>
+                    </div>
+
+                    <label class="space"></label>
+                    <button class="send btn btn-primary">Send Message</button>
+                    <label class="space"></label>
+                </div>
+            </div>
+            <div class="map col-md-4">
+                <iframe src="https://www.google.com/maps/embed?q=40.200048,44.491261&pb=!1m10!1m8!1m3!1d17240.15900856154!2d44.49356229888449!3d40.19441645152406!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1576829646523!5m2!1sen!2s" width="600" height="600" frameborder="0" style="border:5px solid #37a8e0; border-radius: 12px;"></iframe>
+            </div>
+        </div>
+    </section>
+</template>
+
+<script>
+    export default {
+        name: "ContactUs"
+    }
+</script>
+
+<style scoped>
+    h3 {
+        color: white;
+        font-size: 50px;
+        font-weight: 200;
+    }
+    .section-sixth {
+        height: 855px;
+        background-image: url("../../assets/images/contact-us.jpg");
+        background-size: cover;
+    }
+    .contact {
+        padding-top: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .map{
+        padding-top: 100px;
+    }
+    .form {
+        height: auto;
+    }
+    .form-part{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    /*input part*/
+    .inp {
+        position: relative;
+        margin: auto;
+        padding-top: 50px;
+        width: 100%;
+        max-width: 400px;
+    }
+    .space{
+        position: relative;
+        margin: auto;
+        width: 100%;
+        max-width: 400px;
+    }
+    .inp .label {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        font-size: 20px;
+        color: white;
+        font-weight: 300;
+        transform-origin: 0 0;
+        transition: all 0.2s ease;
+    }
+    .inp .border {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        background: #07f;
+        transform: scaleX(0);
+        transform-origin: 0 0;
+        transition: all 0.15s ease;
+    }
+    .inp input {
+        -webkit-appearance: none;
+        width: 100%;
+        border: 0;
+        font-family: inherit;
+        padding: 12px 0;
+        height: 48px;
+        font-size: 16px;
+        font-weight: 500;
+        border-bottom: 2px solid white;
+        background: none;
+        border-radius: 0;
+        color: white;
+        transition: all 0.15s ease;
+    }
+    .inp input:not(:placeholder-shown) + span {
+        color: white;
+        transform: translateY(-20px) scale(0.75);
+    }
+    .inp input:focus {
+        background: none;
+        outline: none;
+    }
+    .inp input:focus + span {
+        color: white;
+        transform: translateY(-10px) scale(0.75);
+    }
+    .inp input:focus + span + .border {
+        transform: scaleX(1);
+    }
+
+    /*input type file */
+    .fileContainer {
+        padding: 50px 0 50px 100px;
+        color: white;
+        font-size: 20px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+    }
+    .fileContainer [type=file] {
+        cursor: inherit;
+        display: block;
+        font-size: 999px;
+        filter: alpha(opacity=0);
+        min-height: 100%;
+        min-width: 100%;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        text-align: right;
+        top: 0;
+    }
+
+    /*checkbox part*/
+    .checkbox-part {
+        display: block;
+        padding: 0 0 25px 25px;
+    }
+    .checkbox-part input {
+        /*padding: 10px;*/
+        height: 50px;
+        width: 50px;
+        display: none;
+        cursor: pointer;
+    }
+    .checkbox-part label {
+        position: relative;
+        cursor: pointer;
+        color: white;
+        letter-spacing: 2px;
+    }
+    .checkbox-part label:before {
+        content:'';
+        -webkit-appearance: none;
+        background-color: transparent;
+        border: 2px solid white;
+        padding: 10px;
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        cursor: pointer;
+        margin-right: 5px;
+    }
+    .checkbox-part input:checked + label:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 4px;
+        left: 9px;
+        width: 6px;
+        height: 14px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
+
+    /*send button part */
+    .send{
+        margin: 25px;
+        background-color: #37a8e0;
+        border: 1px solid #37a8e0;
+        font-size: 30px;
+        width: 250px;
+        height: 80px;
+    }
+</style>
