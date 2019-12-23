@@ -38,7 +38,7 @@
             Portfolio,
             About,
             ContactUs
-        }
+        },
     }
 </script>
 <style>
@@ -46,6 +46,8 @@
         height: 100vh;
         background-image: url("../assets/images/section1-bg.jpeg");
         background-size: cover;
+        display: flex;
+        align-items: flex-end;
     }
     .section1-text-container{
         width: 58%;
@@ -69,7 +71,7 @@
     }
     .section-first > .container{
         position: relative;
-        top: 325px;
+        bottom: 20%;
     }
     .section-text{
         font-size: 20px;
@@ -115,9 +117,6 @@
     }
 
     @media all and (max-width: 1366px) {
-        .section-first > .container {
-            top: 200px;
-        }
         .section1-text-container h1 {
             font-size: 45px;
         }
@@ -139,6 +138,11 @@
         }
         .VueCarousel-slide{
             flex-direction: column;
+        }
+    }
+    @media all and (max-width: 320px){
+        .section-first > .container{
+            bottom: 5%;
         }
     }
 </style>

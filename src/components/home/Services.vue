@@ -13,8 +13,8 @@
                 <div class="col-md-4 col-xs-12 col-sm-6 mb-5">
                     <div class="service-block">
                         <div class="icon-cont">
-                            <img class="icon-blue" src="../../assets/images/ios-blue.png" alt="IOS icon blue">
-                            <img class="icon-white" src="../../assets/images/ios-white.png" alt="IOS icon white">
+                            <img class="icon-blue" v-lazy="require('../../assets/images/ios-blue.png')" alt="IOS icon blue">
+                            <img class="icon-white" v-lazy="require('../../assets/images/ios-white.png')" alt="IOS icon white">
                         </div>
                         <h3>IOS Development</h3>
                         <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
@@ -24,8 +24,8 @@
                 <div class="col-md-4 col-xs-12 col-sm-6 mb-5">
                     <div class="service-block">
                         <div class="icon-cont">
-                            <img class="icon-blue" src="../../assets/images/android-blue.png" alt="Android icon blue">
-                            <img class="icon-white" src="../../assets/images/android-white.png" alt="Adnroid icon white">
+                            <img class="icon-blue" v-lazy="require('../../assets/images/android-blue.png')" alt="Android icon blue">
+                            <img class="icon-white" v-lazy="require('../../assets/images/android-white.png')" alt="Adnroid icon white">
                         </div>
                         <h3>Android Development</h3>
                         <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
@@ -35,8 +35,8 @@
                 <div class="col-md-4 col-xs-12 col-sm-6 mb-5">
                     <div class="service-block">
                         <div class="icon-cont">
-                            <img class="icon-blue" src="../../assets/images/ui-blue.png" alt="UI/UX icon blue">
-                            <img class="icon-white" src="../../assets/images/ui-white.png" alt="UI/UX icon white">
+                            <img class="icon-blue" v-lazy="require('../../assets/images/ui-blue.png')" alt="UI/UX icon blue">
+                            <img class="icon-white" v-lazy="require('../../assets/images/ui-white.png')" alt="UI/UX icon white">
                         </div>
                         <h3>UI/UX Design</h3>
                         <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
@@ -46,8 +46,8 @@
                 <div class="col-md-4 col-xs-12 col-sm-6 mb-5">
                     <div class="service-block">
                         <div class="icon-cont">
-                            <img class="icon-blue little" src="../../assets/images/game-blue.png" alt="Game Development icon blue">
-                            <img class="icon-white little" src="../../assets/images/game-white.png" alt="Game Development icon white">
+                            <img class="icon-blue little" v-lazy="require('../../assets/images/game-blue.png')" alt="Game Development icon blue">
+                            <img class="icon-white little" v-lazy="require('../../assets/images/game-white.png')" alt="Game Development icon white">
                         </div>
                         <h3>Game Development</h3>
                         <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
@@ -57,8 +57,8 @@
                 <div class="col-md-4 col-xs-12 col-sm-6 mb-5">
                     <div class="service-block">
                         <div class="icon-cont">
-                            <img class="icon-blue" src="../../assets/images/web-blue.png" alt="Web Development icon blue">
-                            <img class="icon-white" src="../../assets/images/web-white.png" alt="Web Development icon white">
+                            <img class="icon-blue" v-lazy="require('../../assets/images/web-blue.png')" alt="Web Development icon blue">
+                            <img class="icon-white" v-lazy="require('../../assets/images/web-white.png')" alt="Web Development icon white">
                         </div>
                         <h3>Web Development</h3>
                         <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
@@ -68,8 +68,8 @@
                 <div class="col-md-4 col-xs-12 col-sm-6 mb-5">
                     <div class="service-block">
                         <div class="icon-cont">
-                            <img class="icon-blue" src="../../assets/images/graphic-blue.png" alt="Graphic Design icon blue">
-                            <img class="icon-white" src="../../assets/images/graphic-white.png" alt="Graphic Design icon white">
+                            <img class="icon-blue" v-lazy="require('../../assets/images/graphic-blue.png')" alt="Graphic Design icon blue">
+                            <img class="icon-white" v-lazy="require('../../assets/images/graphic-white.png')" alt="Graphic Design icon white">
                         </div>
                         <h3>Graphic Design</h3>
                         <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>

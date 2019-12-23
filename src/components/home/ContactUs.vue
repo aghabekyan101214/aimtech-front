@@ -1,5 +1,5 @@
 <template>
-    <section class="section-sixth container-fluid">
+    <section ref="map_cont" class="section-sixth container-fluid" id="map_cont">
         <div class="contact">
             <div class="form col-md-6 pl-0">
                 <h3>Contact Us</h3>
@@ -58,18 +58,48 @@
                     </div>
                 </div>
             </div>
-            <div class="map col-md-4">
-                <iframe src="https://www.google.com/maps/embed?q=40.200048,44.491261&pb=!1m10!1m8!1m3!1d17240.15900856154!2d44.49356229888449!3d40.19441645152406!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1576829646523!5m2!1sen!2s"
-                        width="100%" height="600" frameborder="0"
-                        style="border:5px solid #37a8e0; border-radius: 12px;"></iframe>
+            <div  class="map col-md-4">
+                <Map v-if="map_show" />
             </div>
         </div>
     </section>
 </template>
 
 <script>
+
+    import Map from "./Map"
+
     export default {
-        name: "ContactUs"
+        name: "ContactUs",
+        components: {
+            Map
+        },
+        data: () => {
+            return {
+                map_show: false,
+                map_pos: -1
+            }
+        },
+        methods: {
+            handleScroll (event) {
+                let doc_pos = document.documentElement.scrollTop;
+
+                if(doc_pos >= (this.map_pos - 600)) {
+                    this.map_show = true;
+                    window.removeEventListener('scroll', this.handleScroll);
+                }
+                console.log(doc_pos, this.map_pos)
+            }
+        },
+        created () {
+            window.addEventListener('scroll', this.handleScroll);
+        },
+        mounted() {
+            this.map_pos = (document.getElementById("map_cont").offsetTop - document.getElementById("map_cont").clientHeight);
+        },
+        destroyed () {
+            window.removeEventListener('scroll', this.handleScroll);
+        }
     }
 </script>
 

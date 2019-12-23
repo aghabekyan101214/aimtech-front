@@ -48,7 +48,7 @@
                             <img src="./assets/images/linkedin.png" alt="Aimtech linkedin logo">
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2 d-none d-sm-block">
                         <a class="link-title" href="#">Company</a>
                         <div class="col-md-12 pl-0 pt-5 link-block">
                             <p>
@@ -68,7 +68,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2 d-none d-sm-block">
                         <a class="link-title" href="#">Services</a>
                         <div class="col-md-12 pl-0 pt-5 link-block">
                             <p>
@@ -88,7 +88,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2 d-none d-sm-block">
                         <a class="link-title" href="#">Technologies</a>
                         <div class="col-md-12 pl-0 pt-5 link-block">
                             <p>
@@ -134,11 +134,6 @@
         methods: {
 
         },
-        mounted() {
-            document.addEventListener('touchmove', function (event) {
-                if (event.scale !== 1) { event.preventDefault(); }
-            }, false);
-        }
     }
 </script>
 
@@ -235,6 +230,7 @@
     .container.position-absolute{
         left: 50%;
         transform: translateX(-50%);
+        z-index: 10;
     }
     .info-container{
         display: flex;
@@ -322,17 +318,9 @@
 
     @media all and (max-width: 1366px) {
         .logo {
-            height: 65px;
+            height: 55px;
         }
-        .header ul li a{
-            font-size: 12px;
-        }
-        .header ul li {
-            margin: 0;
-        }
-        .header ul li:nth-child(1) {
-            margin-top: 15px;
-        }
+
     }
     @media all and (max-width: 460px) {
         .menu-bar{

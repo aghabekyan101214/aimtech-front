@@ -8,7 +8,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consectetur cumque eaque eum eveniet exercitationem illo incidunt minima nostrum nulla pariatur perferendis praesentium quam quidem, repudiandae sed sequi sunt totam.</p>
                 </div>
                 <div class="col-md-6 col-xs-12">
-                    <img src="../../assets/images/problem-solving.jpg" alt="">
+                    <img class="img-fluid" v-lazy="require('../../assets/images/problem-solving.jpg')" alt="">
                 </div>
             </div>
 
@@ -33,8 +33,5 @@
         letter-spacing: 2px;
         color: #011f34;
     }
-    /*.text-cont{*/
-    /*    padding-left: 130px;*/
-    /*    padding-right: 30px;*/
-    /*}*/
+
 </style>

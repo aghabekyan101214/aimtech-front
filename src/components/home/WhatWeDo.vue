@@ -27,7 +27,7 @@
                     <carousel :perPage="1" :paginationEnabled="false" :touchDrag="false" :mouseDrag="false" ref="carousel">
                         <slide>
                             <div class="col-lg-5 col-md-5 p-0">
-                                <img src="../../assets/images/pre-discovery.jpg" alt="a">
+                                <img class="img-fluid" v-lazy="require('../../assets/images/pre-discovery.jpg')" alt="a">
                             </div>
                             <div class="col-md-5 slider-text-cont pl-lg-5">
                                 <p class="slider-title mb-3">Pre-Discovery</p>
@@ -40,7 +40,7 @@
                         </slide>
                         <slide>
                             <div class="col-lg-5 col-md-5 p-0">
-                                <img src="../../assets/images/pre-discovery.jpg" alt="a">
+                                <img class="img-fluid" v-lazy="require('../../assets/images/pre-discovery.jpg')" alt="a">
                             </div>
                             <div class="col-md-5 slider-text-cont pl-lg-5">
                                 <p class="slider-title mb-3">Pre-Discovery</p>
@@ -53,7 +53,7 @@
                         </slide>
                         <slide>
                             <div class="col-lg-5 col-md-5 p-0">
-                                <img src="../../assets/images/pre-discovery.jpg" alt="a">
+                                <img class="img-fluid" v-lazy="require('../../assets/images/pre-discovery.jpg')" alt="a">
                             </div>
                             <div class="col-md-5 slider-text-cont pl-lg-5">
                                 <p class="slider-title mb-3">Pre-Discovery</p>
@@ -66,7 +66,7 @@
                         </slide>
                         <slide>
                             <div class="col-lg-5 col-md-5 p-0">
-                                <img src="../../assets/images/pre-discovery.jpg" alt="a">
+                                <img class="img-fluid" v-lazy="require('../../assets/images/pre-discovery.jpg')" alt="a">
                             </div>
                             <div class="col-md-5 slider-text-cont pl-lg-5">
                                 <p class="slider-title mb-3">Pre-Discovery</p>
@@ -79,7 +79,7 @@
                         </slide>
                         <slide>
                             <div class="col-lg-5 col-md-5 p-0">
-                                <img src="../../assets/images/pre-discovery.jpg" alt="a">
+                                <img class="img-fluid" v-lazy="require('../../assets/images/pre-discovery.jpg')" alt="a">
                             </div>
                             <div class="col-md-5 slider-text-cont pl-lg-5">
                                 <p class="slider-title mb-3">Pre-Discovery</p>
@@ -205,10 +205,7 @@
         display: flex;
         justify-content: space-around;
     }
-    .slider-cont img{
-        height: 100%;
-        width: 100%;
-    }
+
     .slider-text-cont p{
         font-size: 20px;
         font-family: 'robotoregular', sans-serif;
@@ -228,12 +225,6 @@
         display: flex;
     }
     @media all and (max-width: 460px){
-        /*.slider-points-cont {*/
-        /*    display: none;*/
-        /*}*/
-        /*.slider-points-cont + div{*/
-        /*    display: none;*/
-        /*}*/
         .slider-text-cont{
             margin-top: 20px;
             padding-right: 55px;

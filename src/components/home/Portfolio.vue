@@ -14,17 +14,17 @@
                                 <h2 class="slider-title mb-3">Doctor's Application</h2>
                                 <p class="slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium adipisci animi assumenda consectetur deserunt dolorem ducimus eum, id ipsa, ipsam iusto minus modi nemo nobis quae repellat sit voluptates?</p>
                             </div>
-                            <img class="col-md-6" src="../../assets/images/slider1.png" alt="Portfolio image">
+                            <img class="col-md-6" v-lazy="require('../../assets/images/slider1.png')" alt="Portfolio image">
                         </slide>
                         <slide>
                             <div>
                                 <h2 class="slider-title mb-3">MyForestArmenia</h2>
                                 <p class="slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium adipisci animi assumenda consectetur deserunt dolorem ducimus eum, id ipsa, ipsam iusto minus modi nemo nobis quae repellat sit voluptates?</p>
                             </div>
-                            <img class="col-md-6" src="../../assets/images/slider2.png" alt="Portfolio image">
+                            <img class="col-md-6" v-lazy="require('../../assets/images/slider2.png')" alt="Portfolio image">
                         </slide>
                         <slide>
-                            <img class="col-md-6" src="../../assets/images/slider3.png" alt="Portfolio image">
+                            <img class="col-md-6" v-lazy="require('../../assets/images/slider3.png')" alt="Portfolio image">
                             <div>
                                 <h2 class="slider-title mb-3">Abakus</h2>
                                 <p class="slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium adipisci animi assumenda consectetur deserunt dolorem ducimus eum, id ipsa, ipsam iusto minus modi nemo nobis quae repellat sit voluptates?</p>
