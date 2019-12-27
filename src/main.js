@@ -9,7 +9,7 @@ import VueLazyload from 'vue-lazyload'
 Vue.use(VueLazyload)
 
 import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+// import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 Vue.use(BootstrapVue)
 Vue.config.productionTip = false

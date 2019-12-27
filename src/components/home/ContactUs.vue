@@ -88,7 +88,6 @@
                     this.map_show = true;
                     window.removeEventListener('scroll', this.handleScroll);
                 }
-                console.log(doc_pos, this.map_pos)
             }
         },
         created () {
@@ -104,11 +103,6 @@
 </script>
 
 <style scoped>
-    h3 {
-        color: white;
-        font-size: 50px;
-        font-weight: 200;
-    }
     .section-sixth {
         height: auto;
         min-height: 855px;
@@ -274,7 +268,8 @@
         padding-top: 50px;
     }
     .form > h3 {
-        font-size: 35px;
+        font-size: 32px;
+        color: white;
     }
     @media all and (max-width: 460px) {
         .map{

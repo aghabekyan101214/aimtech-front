@@ -86,7 +86,7 @@
     }
     .slider-text{
         color: #ffffff;
-        font-size: 20px;
+        font-size: 16px;
         letter-spacing: 2px;
     }
     .VueCarousel-slide{

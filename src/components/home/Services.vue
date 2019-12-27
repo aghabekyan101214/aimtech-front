@@ -10,8 +10,9 @@
         </div>
         <div class="container-fluid">
             <div class="row row-services">
-                <div class="col-md-4 col-xs-12 col-sm-6 mb-5">
-                    <div class="service-block">
+                <div class="col-md-4 col-xs-12 col-sm-6 mb-5" >
+                    <div class="service-block" ref="block" >
+                        <div class="hover" @mousemove="effect" @mouseleave="leave"></div>
                         <div class="icon-cont">
                             <img class="icon-blue" v-lazy="require('../../assets/images/ios-blue.png')" alt="IOS icon blue">
                             <img class="icon-white" v-lazy="require('../../assets/images/ios-white.png')" alt="IOS icon white">
@@ -22,7 +23,8 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-xs-12 col-sm-6 mb-5">
-                    <div class="service-block">
+                    <div class="service-block" ref="block2" @mouseleave="leave">
+                        <div class="hover" @mousemove="effect"></div>
                         <div class="icon-cont">
                             <img class="icon-blue" v-lazy="require('../../assets/images/android-blue.png')" alt="Android icon blue">
                             <img class="icon-white" v-lazy="require('../../assets/images/android-white.png')" alt="Adnroid icon white">
@@ -33,7 +35,8 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-xs-12 col-sm-6 mb-5">
-                    <div class="service-block">
+                    <div class="service-block" ref="block3" @mouseleave="leave">
+                        <div class="hover" @mousemove="effect"></div>
                         <div class="icon-cont">
                             <img class="icon-blue" v-lazy="require('../../assets/images/ui-blue.png')" alt="UI/UX icon blue">
                             <img class="icon-white" v-lazy="require('../../assets/images/ui-white.png')" alt="UI/UX icon white">
@@ -44,7 +47,8 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-xs-12 col-sm-6 mb-5">
-                    <div class="service-block">
+                    <div class="service-block" ref="block4" @mouseleave="leave">
+                        <div class="hover" @mousemove="effect"></div>
                         <div class="icon-cont">
                             <img class="icon-blue little" v-lazy="require('../../assets/images/game-blue.png')" alt="Game Development icon blue">
                             <img class="icon-white little" v-lazy="require('../../assets/images/game-white.png')" alt="Game Development icon white">
@@ -55,7 +59,8 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-xs-12 col-sm-6 mb-5">
-                    <div class="service-block">
+                    <div class="service-block" ref="block5" @mouseleave="leave">
+                        <div class="hover" @mousemove="effect"></div>
                         <div class="icon-cont">
                             <img class="icon-blue" v-lazy="require('../../assets/images/web-blue.png')" alt="Web Development icon blue">
                             <img class="icon-white" v-lazy="require('../../assets/images/web-white.png')" alt="Web Development icon white">
@@ -66,7 +71,8 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-xs-12 col-sm-6 mb-5">
-                    <div class="service-block">
+                    <div class="service-block" ref="block6" @mouseleave="leave">
+                        <div class="hover" @mousemove="effect"></div>
                         <div class="icon-cont">
                             <img class="icon-blue" v-lazy="require('../../assets/images/graphic-blue.png')" alt="Graphic Design icon blue">
                             <img class="icon-white" v-lazy="require('../../assets/images/graphic-white.png')" alt="Graphic Design icon white">
@@ -83,13 +89,57 @@
 
 <script>
     export default {
-        name: "Services"
+        name: "Services",
+        data: () => {
+            return {
+                s_height: 0,
+                s_width: 0
+            }
+        },
+        methods: {
+            getHeight() {
+                let height = this.$refs.block.clientHeight;
+                let width = this.$refs.block.clientWidth;
+                if(height && width) {
+                    this.s_height = height / 2;
+                    this.s_width = width / 2;
+                    window.removeEventListener("mouseover", this.getHeight);
+                }
+            },
+            effect(event){
+                let x = event.layerX;
+                let y = event.layerY;
+                let rotate_x = ( this.s_height - y ) * ( 10 / this.s_height);
+                let rotate_y = ( this.s_width - x ) * ( 30 / this.s_width) * -1;
+                event.target.parentElement.style.transform = "rotateX(" + rotate_x + "deg) rotateY(" + rotate_y + "deg) scale(1.05)";
+                event.target.parentElement.style.boxShadow = (rotate_y * -1) + "px " + (rotate_x + 14) + "px 34px 0 rgba( 0, 0, 0, 0.3 )";
+            },
+            leave(event) {
+                event.target.style.transform = "rotateX(0) rotateY(0)";
+                event.target.parentElement.style.transform = "rotateX(0) rotateY(0)";
+                event.target.parentElement.style.boxShadow = "none";
+                event.target.style.boxShadow = "none";
+            }
+        },
+        mounted () {
+            window.addEventListener('mouseover', this.getHeight);
+        },
+        destroyed () {
+            window.removeEventListener('mouseover', this.getHeight);
+        }
     }
 </script>
 
 <style scoped>
     .icon-cont img {
         height: 50px;
+    }
+    .hover{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
     }
     .service-block h3 {
         color: #484848;

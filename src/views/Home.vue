@@ -1,5 +1,6 @@
 <template>
     <div class="home">
+        <Menu/>
         <section class="section-first">
             <div class="container">
                 <div class="row section1-text-row">
@@ -24,15 +25,18 @@
 </template>
 
 <script>
+    import Menu from "../components/home/Menu"
     import Services from "../components/home/Services"
     import Portfolio from "../components/home/Portfolio";
     import About from "../components/home/About";
     import WhatWeDo from "../components/home/WhatWeDo";
     import ContactUs from "../components/home/ContactUs";
 
+
     export default {
         name: 'home',
         components: {
+            Menu,
             WhatWeDo,
             Services,
             Portfolio,
@@ -48,6 +52,7 @@
         background-size: cover;
         display: flex;
         align-items: flex-end;
+        clip-path: polygon(0% 0%,100% 0%,100% 90%,0 100%);
     }
     .section1-text-container{
         width: 58%;
@@ -56,15 +61,12 @@
         color: #ffffff;
         font-size: 52px;
         letter-spacing: 5px;
-        font-family: 'robotoregular', sans-serif;
+        font-family: 'robotolight', sans-serif;
     }
     .section1-text-container span{
         font-size: 60px;
         letter-spacing: 5px;
         text-transform: uppercase;
-    }
-    .mirr-cont p{
-        letter-spacing: 2px;
     }
     .text-blue{
         color: #2fa9de;
@@ -84,13 +86,14 @@
     }
     .mirr-cont p{
         color: #6b6b6b;
-        font-size: 20px;
+        font-size: 16px;
+        letter-spacing: 2px;
     }
     .main-m{
         position: relative;
         z-index: 2;
         color: black;
-        font-size: 35px;
+        font-size: 32px;
         text-align: center;
         width: 100%;
         letter-spacing: 5px;
@@ -113,7 +116,7 @@
     }
     .text-cont p{
         color: #1e3e55;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     @media all and (max-width: 1366px) {
@@ -138,6 +141,9 @@
         }
         .VueCarousel-slide{
             flex-direction: column;
+        }
+        .section-first{
+            clip-path: polygon(0% 0%,100% 0%,100% 96%,0 100%);
         }
     }
     @media all and (max-width: 320px){

@@ -29,7 +29,7 @@
     }
     .title{
         text-align: center;
-        font-size: 28px;
+        font-size: 32px;
         letter-spacing: 2px;
         color: #011f34;
     }

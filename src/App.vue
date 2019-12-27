@@ -1,38 +1,5 @@
 <template>
     <div id="app">
-        <div class="container position-absolute">
-            <div class="row">
-                <header class="col-md-12">
-                    <div class="header">
-                        <nav class="navbar navbar-expand-md navbar-light">
-                            <a class="navbar-brand" href="#"><img class="logo" src="./assets/images/logo.png" alt="Aimtech logo"></a>
-                            <ul class="menu-bar">
-                                <li class="nav-item">
-                                    <router-link to="/">Home</router-link>
-                                    <span class="dot"></span>
-                                </li>
-                                <li class="nav-item ">
-                                    <router-link to="/services">Services</router-link>
-                                    <span class="dot"></span>
-                                </li>
-                                <li class="nav-item ">
-                                    <router-link to="/about">About</router-link>
-                                    <span class="dot"></span>
-                                </li>
-                                <li class="nav-item ">
-                                    <router-link to="/projects">Our Work</router-link>
-                                    <span class="dot"></span>
-                                </li>
-                                <li class="nav-item ">
-                                    <router-link to="/contact-us">Contact Us</router-link>
-                                    <span class="dot"></span>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </header>
-            </div>
-        </div>
         <router-view/>
         <section class="footer">
             <div class="container-fluid">
@@ -139,22 +106,6 @@
 
 <style>
     @font-face {
-        font-family: 'ralewaybold';
-        src: url('./assets/fonts/raleway-bold-webfont.woff2') format('woff2'),
-        url('./assets/fonts/raleway-bold-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-
-    }
-    @font-face {
-        font-family: 'robotobold';
-        src: url('./assets/fonts/roboto-bold-webfont.woff2') format('woff2'),
-        url('./assets/fonts/roboto-bold-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-
-    }
-    @font-face {
         font-family: 'robotolight';
         src: url('./assets/fonts/roboto-light-webfont.woff2') format('woff2'),
         url('./assets/fonts/roboto-light-webfont.woff') format('woff');
@@ -162,21 +113,19 @@
         font-style: normal;
 
     }
-    @font-face {
-        font-family: 'robotomedium';
-        src: url('./assets/fonts/roboto-medium-webfont.woff2') format('woff2'),
-        url('./assets/fonts/roboto-medium-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-
+    .dropdown-menu.show{
+        background-color: unset;
+        border: none!important;
+        outline: none;
     }
-    @font-face {
-        font-family: 'robotoregular';
-        src: url('./assets/fonts/roboto-regular-webfont.woff2') format('woff2'),
-        url('./assets/fonts/roboto-regular-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-
+    .nav-item{
+        list-style-type: none;
+    }
+    .dropdown-toggle::after{
+        border: none!important;
+    }
+    .dropdown-toggle::before{
+        border: none!important;
     }
     .container-fluid{
         padding-left: 100px!important;
@@ -186,7 +135,7 @@
         font-family: 'robotolight', sans-serif;
     }
     h3 {
-        font-family: 'robotoregular', sans-serif;
+        font-family: 'robotolight', sans-serif;
     }
     header, .header {
         width: 100%;
@@ -289,7 +238,7 @@
         border-bottom: 3px solid #36a8e0;
         border-bottom-right-radius: 2px;
         border-bottom-left-radius: 2px;
-        font-family: robotoregular, sans-serif;
+        font-family: robotolight, sans-serif;
         font-size: 20px;
     }
     a:hover{
@@ -311,7 +260,7 @@
         height: 100%;
     }
     .footer-cont a, .footer-cont p{
-        font-family: robotoregular, sans-serif;
+        font-family: robotolight, sans-serif;
         letter-spacing: 2px;
         color: #212529;
     }
@@ -336,7 +285,7 @@
             font-size: 40px!important;
         }
         .header ul li a{
-            font-size: 20px;
+            font-size: 18px;
         }
         .header ul li{
             margin-bottom: 10px;
@@ -357,6 +306,23 @@
         }
         .menu-bar{
             padding-left: 0!important;
+        }
+        .dropleft .dropdown-menu{
+            right: 10% !important;
+        }
+        .dropdown-menu.show{
+            top: 65% !important;
+        }
+    }
+    @media all and (max-width: 320px){
+        .header ul li{
+            margin-bottom: 5px;
+        }
+        .header ul{
+            margin-top: 25px!important;
+        }
+        .dropdown-menu.show{
+            top: 0 !important;
         }
     }
 

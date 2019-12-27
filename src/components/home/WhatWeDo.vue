@@ -3,7 +3,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 text-cont mb-5">
-                    <h2 class="title mb-5">What We Do</h2>
+                    <h2 class="title mb-3">What We Do</h2>
                     <p class="text">Consistency and transparency are key to our delivery proces, so we follow the same
                         <br> framework regardless of the project.</p>
                 </div>
@@ -146,7 +146,7 @@
 
 <style scoped>
     .section-fifth{
-        padding: 50px 0;
+        padding: 30px 0 50px 0;
     }
     .bg-primary{
         background-color: #36a8e0!important;
@@ -159,7 +159,7 @@
     }
     .title{
         text-align: center;
-        font-size: 40px;
+        font-size: 32px;
     }
     .progress{
         border-radius: 10px;
@@ -176,7 +176,7 @@
         border-radius: 5px;
     }
     .point-box p{
-        font-family: 'robotoregular', sans-serif;
+        font-family: 'robotolight', sans-serif;
         font-size: 18px;
     }
     .point-box{
@@ -198,7 +198,7 @@
     }
     .text{
         text-align: center;
-        font-size: 20px!important;
+        font-size: 16px!important;
         letter-spacing: 2px;
     }
     .slider-points-cont{
@@ -206,20 +206,19 @@
         justify-content: space-around;
     }
 
-    .slider-text-cont p{
-        font-size: 20px;
-        font-family: 'robotoregular', sans-serif;
-    }
     .slider-text-cont{
         padding-left: 0;
     }
     .slider-title{
         color: #36a8e0;
+        font-size: 18px;
         margin-bottom: 3px!important;
+        letter-spacing: 2px;
     }
     .slider-text{
         color: #1e3e55;
-        font-size: 19px!important;
+        font-size: 14px!important;
+        letter-spacing: 2px;
     }
     .VueCarousel-slide{
         display: flex;
@@ -237,7 +236,7 @@
         }
         .mobile-navi p{
             color: #36a8e0;
-            font-family: robotoregular, sans-serif;
+            font-family: robotolight, sans-serif;
         }
     }
 </style>
