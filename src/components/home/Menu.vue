@@ -15,7 +15,7 @@
                                 <span class="dot"/>
                             </li>
                             <li class="nav-item ">
-                                <router-link to="/projects">Our Work</router-link>
+                                <router-link to="/portfolio">Our Work</router-link>
                                 <span class="dot"/>
                             </li>
                             <li class="nav-item ">
@@ -29,7 +29,7 @@
                             </template>
                             <b-dropdown-item class="nav-item" to="/">Home</b-dropdown-item>
                             <b-dropdown-item class="nav-item" to="/about">About</b-dropdown-item>
-                            <b-dropdown-item class="nav-item" to="/projects">Our Work</b-dropdown-item>
+                            <b-dropdown-item class="nav-item" to="/portfolio">Our Work</b-dropdown-item>
                             <b-dropdown-item class="nav-item" to="/contact-us">Contact Us</b-dropdown-item>
                         </b-nav-item-dropdown>
 

@@ -169,7 +169,9 @@
         border-radius: 20px!important;
         width: 170px;
         font-weight: 700!important;
-        font-family: 'ralewaybold', sans-serif;
+        font-size: 14px!important;
+        font-family: 'robotolight', sans-serif;
+        letter-spacing: 2px;
     }
     .navbar{
         display: flex;
