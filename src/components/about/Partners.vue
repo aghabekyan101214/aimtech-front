@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid">
+    <div class="container-fluid rounded-section">
         <div class="container">
                 <div class="row">
                     <div class="col-md-12 m-auto">

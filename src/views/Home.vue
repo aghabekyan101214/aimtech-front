@@ -1,7 +1,7 @@
 <template>
     <div class="home">
         <Menu/>
-        <section class="section-first">
+        <section class="section-first rounded-section mt-0">
             <div class="container">
                 <div class="row section1-text-row">
                     <div class="section1-text-container col-md-9">
@@ -14,7 +14,7 @@
                 </div>
             </div>
         </section>
-
+        <LittleSection/>
         <Services/>
         <Portfolio/>
         <About/>
@@ -31,11 +31,12 @@
     import About from "../components/home/About";
     import WhatWeDo from "../components/home/WhatWeDo";
     import ContactUs from "../components/home/ContactUs";
-
+    import LittleSection from "../components/home/LittleSection";
 
     export default {
         name: 'home',
         components: {
+            LittleSection,
             Menu,
             WhatWeDo,
             Services,
@@ -52,7 +53,6 @@
         background-size: cover;
         display: flex;
         align-items: flex-end;
-        clip-path: polygon(0% 0%,100% 0%,100% 90%,0 100%);
     }
     .section1-text-container{
         width: 58%;
@@ -93,7 +93,7 @@
         position: relative;
         z-index: 2;
         color: black;
-        font-size: 32px;
+        font-size: 30px;
         text-align: center;
         width: 100%;
         letter-spacing: 5px;

@@ -1,5 +1,5 @@
 <template>
-    <section class="section-fifth">
+    <section class="section-fifth rounded-section">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 text-cont mb-5">
@@ -24,7 +24,7 @@
                     </b-progress>
                 </div>
                 <div class="col-md-12 mt-5 slider-cont">
-                    <carousel :perPage="1" :paginationEnabled="false" :touchDrag="false" :mouseDrag="false" ref="carousel">
+                    <carousel :perPage="1" @pageChange="handleChange" :paginationEnabled="false" ref="carousel">
                         <slide>
                             <div class="col-lg-5 col-md-5 p-0">
                                 <img class="img-fluid" v-lazy="require('../../assets/images/pre-discovery.jpg')" alt="a">
@@ -105,7 +105,7 @@
         name: "WhatWeDo",
         components: {
             Carousel,
-            Slide
+            Slide,
         },
         data: () => {
             return {
@@ -137,16 +137,22 @@
                         this.def_name = e.name;
                     }
                 });
-
                 this.$refs.carousel.goToPage(n)
             },
+            handleChange() {
+                this.change(this.$refs.carousel.currentPage);
+                this.$refs.carousel.click();
+            }
+
         },
+
     }
 </script>
 
 <style scoped>
     .section-fifth{
         padding: 30px 0 50px 0;
+        background: #fff;
     }
     .bg-primary{
         background-color: #36a8e0!important;
@@ -187,15 +193,12 @@
     }
     .active{
         background-color: #36a8e0;
-        color: white;
+        color: white!important;
     }
     .point-box > p{
         text-align: center;
     }
-    .point-box:hover .number-box{
-        background-color: #36a8e0;
-        color: white;
-    }
+
     .text{
         text-align: center;
         font-size: 16px!important;
@@ -222,6 +225,12 @@
     }
     .VueCarousel-slide{
         display: flex;
+    }
+    @media all and (min-width: 1200px) {
+        .point-box:hover .number-box{
+            background-color: #36a8e0;
+            color: white;
+        }
     }
     @media all and (max-width: 460px){
         .slider-text-cont{

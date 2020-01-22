@@ -1,5 +1,5 @@
 <template>
-    <section class="section-second">
+    <section class="section-second rounded-section">
         <div class="container">
             <div class="row">
                 <div class="mirr-cont">
@@ -148,6 +148,7 @@
     .section-second{
         padding-top: 40px;
         padding-bottom: 50px;
+        background: #fff;
     }
     .icon-white{
         transition: .3s;

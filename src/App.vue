@@ -1,93 +1,47 @@
 <template>
     <div id="app">
         <router-view/>
-        <section class="footer">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-3 ft-first-part">
-                        <img src="./assets/images/logo-new.png" class="logo" alt="Aimtech Logo">
-                        <div class="col-md-12 pt-5 pl-0">
-                            <p>Hakob Hakobyan 3, Yerevan, Armenia</p>
-                            <p>+374 55 55 77 44</p>
-                        </div>
-                        <div class="col-md-12 pt-5 pl-0 social-buttons">
-                            <img class="mr-3" src="./assets/images/facebook.png" alt="Aimtech facebook logo">
-                            <img src="./assets/images/linkedin.png" alt="Aimtech linkedin logo">
-                        </div>
+        <footer>
+            <div class="container-fluid rounded-section mb-0">
+                <div class="row border-bottom pt-5 pb-3 align-items-center footer-row">
+                    <div class="col-md-2 pl-lg-0">
+                        <p>Have any questions ?</p>
                     </div>
-                    <div class="col-md-2 d-none d-sm-block">
-                        <a class="link-title" href="#">Company</a>
-                        <div class="col-md-12 pl-0 pt-5 link-block">
-                            <p>
-                                <a href="#">About Us</a>
-                            </p>
-                            <p>
-                                <a href="#">Our Team</a>
-                            </p>
-                            <p>
-                                <a href="#">What We Do</a>
-                            </p>
-                            <p>
-                                <a href="#">Careers</a>
-                            </p>
-                            <p>
-                                <a href="#">Contact Us</a>
-                            </p>
-                        </div>
+                    <div class="col-md-2">
+                        <p><img src="./assets/images/reply.svg" alt="Reply Aimtech"> info@aimtech.am</p>
                     </div>
-                    <div class="col-md-2 d-none d-sm-block">
-                        <a class="link-title" href="#">Services</a>
-                        <div class="col-md-12 pl-0 pt-5 link-block">
-                            <p>
-                                <a href="#">About Us</a>
-                            </p>
-                            <p>
-                                <a href="#">Our Team</a>
-                            </p>
-                            <p>
-                                <a href="#">What We Do</a>
-                            </p>
-                            <p>
-                                <a href="#">Careers</a>
-                            </p>
-                            <p>
-                                <a href="#">Contact Us</a>
-                            </p>
-                        </div>
+                    <div class="col-md-2">
+                        <p> <img src="./assets/images/location.svg" alt="Loaction Aimtech"> H. Hakobyan 3, Yerevan, Armenia</p>
                     </div>
-                    <div class="col-md-2 d-none d-sm-block">
-                        <a class="link-title" href="#">Technologies</a>
-                        <div class="col-md-12 pl-0 pt-5 link-block">
-                            <p>
-                                <a href="#">About Us</a>
-                            </p>
-                            <p>
-                                <a href="#">Our Team</a>
-                            </p>
-                            <p>
-                                <a href="#">What We Do</a>
-                            </p>
-                            <p>
-                                <a href="#">Careers</a>
-                            </p>
-                            <p>
-                                <a href="#">Contact Us</a>
-                            </p>
-                        </div>
+                    <div class="col-md-2">
+                        <p> <img src="./assets/images/call.svg" alt="Phone Aimtech"> +374 55 02 34 20</p>
+                    </div>
+                    <div class="col-md-4 footer-logo-cont justify-content-end text-right">
+                        <img class="img-fluid d-block" src="./assets/images/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="row pt-5 pb-3">
+                    <div class="col-lg-4 col-12 col-sm-12 pl-lg-0">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores consequatur debitis, distinctio dolore doloribus ea eos id incidunt ipsum nisi nobis non optio quibusdam sapiente sint sit ullam veniam.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolore molestias nam! Doloribus, fugit inventore magni maiores nemo, nesciunt nihil nulla officiis provident quam quis reiciendis saepe temporibus, vel voluptatibus?</p>
+                    </div>
+                    <div class="col-6 col-lg-2 col-sm-6">
+                        <ul>
+                            <li> <router-link to="/about">About</router-link></li>
+                            <li> <router-link to="#">What We Do</router-link></li>
+                            <li><router-link to="#">Sales Books</router-link></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-2 col-sm-6">
+                        <ul>
+                            <li> <router-link to="#">Training Programs</router-link></li>
+                            <li><router-link to="#">Case Studies</router-link></li>
+                            <li><router-link to="/contact">Contact us</router-link></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="privacy-footer">
-            <div class="container-fluid footer-cont">
-                <p class="m-0">&copy; 2018-2020 AIMTECH, All rights reserved</p>
-                <div class="link-block-footer">
-                    <a class="mr-5" href="#">Terms & Conditions</a>
-                    <a class="mr-5" href="#">Privacy Policy</a>
-                    <a class="mr-5" href="#">Site Map</a>
-                </div>
-            </div>
-        </section>
+        </footer>
     </div>
 </template>
 
@@ -112,6 +66,14 @@
         font-weight: normal;
         font-style: normal;
 
+    }
+    #app{
+        padding: 15px;
+        background: #001224;
+    }
+    .rounded-section {
+        border-radius: 15px;
+        margin: 15px 0;
     }
     .dropdown-menu.show{
         background-color: unset;
@@ -222,49 +184,45 @@
     .nav-item a:hover + .dot {
         display: inline-block!important;
     }
-    .footer{
-        padding: 50px 0;
-        background-color: #f0f0f0;
-    }
-    .footer .logo{
-        height: 43px;
-    }
-    .footer p{
-        letter-spacing: 2px;
-        color: #1e3e55;
-    }
-    .footer .link-title {
-        letter-spacing: 2px;
-        color: #36a8e0;
-        padding-bottom: 10px;
-        border-bottom: 3px solid #36a8e0;
-        border-bottom-right-radius: 2px;
-        border-bottom-left-radius: 2px;
-        font-family: robotolight, sans-serif;
-        font-size: 20px;
-    }
     a:hover{
         text-decoration: none!important;
     }
     .link-block p > a{
         color: #1e3e55;
     }
-    .footer .social-buttons img{
-        height: 40px;
+
+
+    /*main footer*/
+    footer p {
+        font-size: 13px;
+        letter-spacing: 1px;
+        color: white;
     }
-    .privacy-footer{
-        height: 80px;
+    footer .container-fluid {
+        background: #0e416c;
     }
-    .footer-cont{
+
+    footer .border-bottom {
+        border-bottom: 1px solid white!important;
+    }
+    .footer-logo-cont img {
+        height: 50px;
+    }
+    .footer-row > div {
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        height: 100%;
     }
-    .footer-cont a, .footer-cont p{
-        font-family: robotolight, sans-serif;
-        letter-spacing: 2px;
-        color: #212529;
+    footer ul a {
+        color: white;
+        font-size: 14px;
+    }
+    footer ul li {
+        color: #05acd4;
+        margin-bottom: 8px;
+    }
+    .footer-row p img {
+        height: 15px;
+        padding-right: 15px;
     }
 
     @media all and (max-width: 1366px) {

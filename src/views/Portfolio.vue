@@ -1,6 +1,6 @@
 <template>
     <div class="about">
-        <div class="container-fluid main-cont">
+        <div class="container-fluid main-cont rounded-section mt-0">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -24,7 +24,7 @@
     }
 </script>
 
-<style>
+<style scoped>
     .main-cont{
         height: 390px;
         background-image: url("../assets/images/about/header-img-min.jpg");

@@ -1,5 +1,5 @@
 <template>
-    <section class="section-third">
+    <section class="section-third rounded-section">
         <div class="container-fluid">
             <div class="row">
                 <div class="mirr-cont">

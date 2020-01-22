@@ -1,5 +1,5 @@
 <template>
-    <section class="section-fourth">
+    <section class="section-fourth rounded-section">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 col-xs-12 text-cont">

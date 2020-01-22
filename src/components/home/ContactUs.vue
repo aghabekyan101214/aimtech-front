@@ -1,5 +1,5 @@
 <template>
-    <section ref="map_cont" class="section-sixth container-fluid" id="map_cont">
+    <section ref="map_cont" class="section-sixth container-fluid rounded-section" id="map_cont">
         <div class="contact">
             <div class="form col-md-6 pl-0">
                 <h3>Contact Us</h3>
@@ -57,9 +57,6 @@
                         <button class="rounded-btn send btn btn-primary">Send Message</button>
                     </div>
                 </div>
-            </div>
-            <div  class="map col-md-4">
-                <Map v-if="map_show" />
             </div>
         </div>
     </section>
@@ -221,11 +218,6 @@
         text-align: left;
     }
 
-    /*checkbox part*/
-    .checkbox-part {
-        /*display: block;*/
-        /*padding: 0 0 25spx 25px;*/
-    }
     .checkbox-part input {
         height: 50px;
         width: 50px;

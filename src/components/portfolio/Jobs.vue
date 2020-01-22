@@ -1,8 +1,8 @@
 <template>
-    <div class="jobs">
-        <div class="container-fluid pt-5 pb-5">
+    <div class="jobs rounded-section">
+        <div class="container pt-5 pb-5">
 
-            <div class="row align-items-center">
+            <div class="row align-items-center mb-4">
                 <div class="col-md-6">
                     <div class="logo-cont mb-3">
                         <img class="img-fluid" src="../../assets/images/portfolio/slavmed-logo.png" alt="Slavmed Logo Aimtech">
@@ -25,7 +25,7 @@
                 </div>
             </div>
 
-            <div class="row align-items-center">
+            <div class="row align-items-center mb-4">
                 <div class="col-md-6">
                     <img class="img-fluid" src="../../assets/images/portfolio/my-forest.png" alt="Myforest">
                 </div>
@@ -43,7 +43,7 @@
                 </div>
             </div>
 
-            <div class="row align-items-center">
+            <div class="row align-items-center mb-4">
                 <div class="col-md-6">
                     <div class="logo-cont mb-3">
                         <img class="img-fluid" src="../../assets/images/portfolio/gabig-logo.png" alt="Gabig Creative Logo">
@@ -61,7 +61,7 @@
                 </div>
             </div>
 
-            <div class="row align-items-center">
+            <div class="row align-items-center mb-4">
                 <div class="col-md-6">
                     <img class="img-fluid" src="../../assets/images/portfolio/abakus-min.png" alt="Abakus">
                 </div>
@@ -113,6 +113,12 @@
         background-size: cover;
         height: 40px;
         width: 160px;
+    }
+    .col-md-6.text-lg-right.text-md-right .img-fluid{
+        height: 450px;
+    }
+    .jobs {
+        background: #fff;
     }
     @media all and (max-width: 480px){
         .row.align-items-center{

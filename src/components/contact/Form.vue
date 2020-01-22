@@ -1,5 +1,5 @@
 <template>
-    <div class="contact-form">
+    <div class="contact-form rounded-section overflow-hidden">
         <section class="map-section">
             <div class="layout-op position-absolute"></div>
             <div class="container p-5">
@@ -58,7 +58,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-6 p-5">
+                            <div class="col-md-6 p-lg-5 p-md-5 d-none d-xl-block d-md-block d-sm-block">
                                 <div class="contact-icons-cont p-4">
                                     <div class="text-area">
                                         <div class="reach">
@@ -87,7 +87,6 @@
 <style scoped>
     .map-section{
         width: 100%;
-        height: 700px;
         background-image: url("../../assets/images/contact/map.svg");
         background-size: cover;
         position: relative;
@@ -120,7 +119,7 @@
     .inp {
         position: relative;
         margin: auto;
-        padding-top: 50px;
+        padding-top: 35px;
         width: 100%;
         max-width: 400px;
         margin-left: 0;
@@ -130,7 +129,7 @@
         position: absolute;
         top: 40px;
         left: 0;
-        font-size: 20px;
+        font-size: 17px;
         color: #0c4a80;
         font-weight: 300;
         transform-origin: 0 0;

@@ -1,6 +1,6 @@
 <template>
     <div class="about">
-        <div class="container-fluid main-cont">
+        <div class="container-fluid main-cont rounded-section mt-0">
             <div class="container">
                 <div class="row">
                     <h2 class="title">About <span class="text-blue">Us</span></h2>
