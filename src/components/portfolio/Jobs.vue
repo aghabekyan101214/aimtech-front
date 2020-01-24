@@ -25,7 +25,7 @@
                 </div>
             </div>
 
-            <div class="row align-items-center mb-4">
+            <div class="row align-items-center mb-4 reverse">
                 <div class="col-md-6">
                     <img class="img-fluid" src="../../assets/images/portfolio/my-forest.png" alt="Myforest">
                 </div>
@@ -61,7 +61,7 @@
                 </div>
             </div>
 
-            <div class="row align-items-center mb-4">
+            <div class="row align-items-center mb-4 reverse">
                 <div class="col-md-6">
                     <img class="img-fluid" src="../../assets/images/portfolio/abakus-min.png" alt="Abakus">
                 </div>
@@ -115,7 +115,7 @@
         width: 160px;
     }
     .col-md-6.text-lg-right.text-md-right .img-fluid{
-        height: 450px;
+        max-height: 450px;
     }
     .jobs {
         background: #fff;
@@ -123,6 +123,15 @@
     @media all and (max-width: 480px){
         .row.align-items-center{
             margin-bottom: 20px;
+        }
+        .reverse {
+            flex-direction: column-reverse;
+        }
+        .jobs .container > .row {
+            border-bottom: 1px solid #36a8e0;
+        }
+        .jobs .container > .row:last-child {
+            border-bottom: none;
         }
     }
 </style>

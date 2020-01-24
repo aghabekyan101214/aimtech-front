@@ -10,19 +10,21 @@
         </div>
         <div class="container-fluid">
             <div class="row row-services">
-                <div class="col-md-4 col-xs-12 col-sm-6 mb-5" >
+
+                <div class="col-md-6 col-lg-4 col-12 col-sm-6 mb-5" >
                     <div class="service-block" ref="block" >
                         <div class="hover" @mousemove="effect" @mouseleave="leave"></div>
                         <div class="icon-cont">
-                            <img class="icon-blue" v-lazy="require('../../assets/images/ios-blue.png')" alt="IOS icon blue">
-                            <img class="icon-white" v-lazy="require('../../assets/images/ios-white.png')" alt="IOS icon white">
+                            <img class="icon-blue" v-lazy="require('../../assets/images/ios-blue.png')" alt="IOS icon blue"/>
+                            <img class="icon-white" v-lazy="require('../../assets/images/ios-white.png')" alt="IOS icon white"/>
                         </div>
                         <h3>IOS Development</h3>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                        <span>As a reliable IOS app development company, we transform your iOS app ideas to stunning realities which are App Store approved.</span>
                         <hr>
                     </div>
                 </div>
-                <div class="col-md-4 col-xs-12 col-sm-6 mb-5">
+
+                <div class="col-md-6 col-lg-4 col-12 col-sm-6 mb-5">
                     <div class="service-block" ref="block2" @mouseleave="leave">
                         <div class="hover" @mousemove="effect"></div>
                         <div class="icon-cont">
@@ -30,11 +32,12 @@
                             <img class="icon-white" v-lazy="require('../../assets/images/android-white.png')" alt="Adnroid icon white">
                         </div>
                         <h3>Android Development</h3>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                        <span>We engineer native Android apps that solve users’ pain-points bringing delight in their day-to-day life.</span>
                         <hr>
                     </div>
                 </div>
-                <div class="col-md-4 col-xs-12 col-sm-6 mb-5">
+
+                <div class="col-md-6 col-lg-4 col-12 col-sm-6 mb-5">
                     <div class="service-block" ref="block3" @mouseleave="leave">
                         <div class="hover" @mousemove="effect"></div>
                         <div class="icon-cont">
@@ -42,11 +45,12 @@
                             <img class="icon-white" v-lazy="require('../../assets/images/ui-white.png')" alt="UI/UX icon white">
                         </div>
                         <h3>UI/UX Design</h3>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                        <span>Your website is how your customers experience your brand. Ensure their experience is the best it can be by educating, inspiring, communicating, servicing, and engaging with them.</span>
                         <hr>
                     </div>
                 </div>
-                <div class="col-md-4 col-xs-12 col-sm-6 mb-5">
+
+                <div class="col-md-6 col-lg-4 col-12 col-sm-6 mb-5">
                     <div class="service-block" ref="block4" @mouseleave="leave">
                         <div class="hover" @mousemove="effect"></div>
                         <div class="icon-cont">
@@ -54,11 +58,12 @@
                             <img class="icon-white little" v-lazy="require('../../assets/images/game-white.png')" alt="Game Development icon white">
                         </div>
                         <h3>Game Development</h3>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                        <span>For us designing starts with end users. We put ourselves in the user’s shoes to understand what they really need. The creative part of us then has a solid platform to define color, messaging, layout, and everything else.</span>
                         <hr>
                     </div>
                 </div>
-                <div class="col-md-4 col-xs-12 col-sm-6 mb-5">
+
+                <div class="col-md-6 col-lg-4 col-12 col-sm-6 mb-5">
                     <div class="service-block" ref="block5" @mouseleave="leave">
                         <div class="hover" @mousemove="effect"></div>
                         <div class="icon-cont">
@@ -66,11 +71,12 @@
                             <img class="icon-white" v-lazy="require('../../assets/images/web-white.png')" alt="Web Development icon white">
                         </div>
                         <h3>Web Development</h3>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                        <span>We understand the importance of your brand identity for your business success Hence we are here to take care of it starting from a logo design up to creating your brand book.</span>
                         <hr>
                     </div>
                 </div>
-                <div class="col-md-4 col-xs-12 col-sm-6 mb-5">
+
+                <div class="col-md-6 col-lg-4 col-12 col-sm-6 mb-5">
                     <div class="service-block" ref="block6" @mouseleave="leave">
                         <div class="hover" @mousemove="effect"></div>
                         <div class="icon-cont">
@@ -78,10 +84,11 @@
                             <img class="icon-white" v-lazy="require('../../assets/images/graphic-white.png')" alt="Graphic Design icon white">
                         </div>
                         <h3>Graphic Design</h3>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                        <span>We design and create 2D, 3D, AR, VR video games with Unity.</span>
                         <hr>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -173,6 +180,8 @@
     .service-block span{
         color: #6b6b6b;
         transition: .3s;
+        display: block;
+        min-height: 85px;
     }
     .service-block:hover span {
         color: white;
@@ -213,10 +222,11 @@
     }
     @media all and (max-width: 460px) {
         .main-m{
-            font-size: 40px;
+            font-size: 32px;
         }
         .mirr-cont p{
-            font-size: 20px;
+            padding: 0 3px;
+            font-size: 15px;
         }
         .row-services{
             padding-top: 0;

@@ -1,8 +1,25 @@
 <template>
     <div id="app">
+        <b-navbar toggleable="lg" type="light" variant="default" class="header navbar-dark" ref="header" id="header">
+            <div class="container">
+                <b-navbar-brand to="/">
+                    <img class="logo logo-white" src="./assets/images/logo.png" alt="Aimtech Logo">
+                    <img class="logo logo-color d-none" src="./assets/images/logo-new.png" alt="Aimtech logo">
+                </b-navbar-brand>
+                <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+                <b-collapse id="nav-collapse" is-nav>
+                    <b-navbar-nav>
+                        <b-nav-item to="/">Home</b-nav-item>
+                        <b-nav-item to="/about">About</b-nav-item>
+                        <b-nav-item to="/portfolio">Our Work</b-nav-item>
+                        <b-nav-item to="/contact-us">Contact Us</b-nav-item>
+                    </b-navbar-nav>
+                </b-collapse>
+            </div>
+        </b-navbar>
         <router-view/>
-        <footer>
-            <div class="container-fluid rounded-section mb-0">
+        <footer class="rounded-section overflow-hidden mb-0">
+            <div class="container-fluid mb-0">
                 <div class="row border-bottom pt-5 pb-3 align-items-center footer-row">
                     <div class="col-md-2 pl-lg-0">
                         <p>Have any questions ?</p>
@@ -41,6 +58,30 @@
                     </div>
                 </div>
             </div>
+            <div class="footer pt-4 pb-4">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-2 col-md-1">
+                            <a href="#" class="img-cont d-flex align-items-center justify-content-center">
+                                <img src="./assets/images/linkedin.svg" alt="Linkedin Logo Aimtech">
+                            </a>
+                        </div>
+                        <div class="col-2 col-md-1">
+                            <a href="#" class="img-cont d-flex align-items-center justify-content-center">
+                                <img src="./assets/images/facebook.svg" alt="Facebook Logo Aimtech">
+                            </a>
+                        </div>
+                        <div class="col-2 col-md-1">
+                            <a href="#" class="img-cont d-flex align-items-center justify-content-center">
+                                <img src="./assets/images/instagram.svg" alt="Instagram Logo Aimtech">
+                            </a>
+                        </div>
+                        <div class="col-md-12 mt-3">
+                            <p class="text-center m-0">Copyright AimTech - {{ new Date().getFullYear() }}. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
 </template>
@@ -49,11 +90,27 @@
     export default {
         data: () => {
             return {
-                hover: false
+                hover: false,
+                header: 0,
+                sticky: 0
             }
         },
+        mounted() {
+            document.addEventListener("scroll", this.handleScroll);
+            this.sticky = document.getElementById("header").offsetTop;
+        },
         methods: {
-
+            handleScroll() {
+                if (window.pageYOffset > this.sticky + 60) {
+                    this.$refs.header.classList.add("sticky");
+                    this.$refs.header.classList.add("navbar-light");
+                    this.$refs.header.classList.remove("navbar-dark");
+                } else {
+                    this.$refs.header.classList.remove("sticky");
+                    this.$refs.header.classList.add("navbar-dark");
+                    this.$refs.header.classList.remove("navbar-light");
+                }
+            }
         },
     }
 </script>
@@ -66,6 +123,39 @@
         font-weight: normal;
         font-style: normal;
 
+    }
+    .sticky {
+        position: fixed!important;
+        top: 0;
+        width: calc(100% - 30px) !important;
+        background: white;
+        z-index: 10000;
+        left: 0;
+        transition: .5s;
+        border-bottom: 3px solid #37a7e0;
+        margin: 0 15px;
+        border-radius: 0 0 15px 15px;
+    }
+    .sticky .container {
+        padding: 0 15px!important;
+    }
+    .sticky a {
+        color: black!important;
+        font-family: robotolight, sans-serif;
+        font-size: 16px!important;
+    }
+    .navbar-nav a{
+        font-family: robotolight, sans-serif;
+        font-size: 16px!important;
+    }
+    .sticky .logo-white {
+        display: none;
+    }
+    .sticky .logo-color {
+        display: block!important;
+    }
+    .sticky + div  {
+        padding-top: 60px!important;
     }
     #app{
         padding: 15px;
@@ -89,10 +179,6 @@
     .dropdown-toggle::before{
         border: none!important;
     }
-    .container-fluid{
-        padding-left: 100px!important;
-        padding-right: 100px!important;
-    }
     h2, p{
         font-family: 'robotolight', sans-serif;
     }
@@ -109,12 +195,11 @@
         height: 50px;
     }
     .header ul {
-        margin-bottom: 0!important;
+        margin: 0 auto;
     }
     .header ul li{
         list-style-type: none;
         text-align: right;
-        margin-bottom: 18px;
         position: relative;
     }
     .header ul li a {
@@ -190,6 +275,10 @@
     .link-block p > a{
         color: #1e3e55;
     }
+    .container-fluid{
+        padding-left: 100px!important;
+        padding-right: 100px!important;
+    }
 
 
     /*main footer*/
@@ -224,12 +313,34 @@
         height: 15px;
         padding-right: 15px;
     }
-
+    .footer {
+        background: #0e3b61;
+    }
+    .footer img {
+        height: 18px;
+    }
+    .footer .img-cont{
+        height: 30px;
+        width: 30px;
+        background: #0789c4;
+        text-align: center;
+    }
+    /*footer end*/
     @media all and (max-width: 1366px) {
         .logo {
             height: 55px;
         }
 
+    }
+    .nav-link.dropdown-toggle {
+        position: relative;
+        z-index: 999999;
+    }
+    @media all and (max-width: 1024px) {
+        .container-fluid{
+            padding-left: 50px!important;
+            padding-right: 50px!important;
+        }
     }
     @media all and (max-width: 460px) {
         .menu-bar{
@@ -238,11 +349,14 @@
         .logo{
             height: 40px;
         }
+        .title{
+            font-size: 28px;
+        }
         .section1-text-container h1{
-            font-size: 40px!important;
+            font-size: 30px!important;
         }
         .section1-text-container span{
-            font-size: 40px!important;
+            font-size: 30px!important;
         }
         .header ul li a{
             font-size: 18px;
@@ -250,10 +364,6 @@
         .header ul li{
             margin-bottom: 10px;
             /*margin-top: 5px;*/
-        }
-        .container-fluid{
-            padding-left: 15px!important;
-            padding-right: 15px!important;
         }
         .ft-first-part{
             text-align: center;
@@ -272,6 +382,13 @@
         }
         .dropdown-menu.show{
             top: 65% !important;
+        }
+        .container-fluid{
+            padding-left: 10px!important;
+            padding-right: 10px!important;
+        }
+        .main-cont {
+            height: 150px!important;
         }
     }
     @media all and (max-width: 320px){

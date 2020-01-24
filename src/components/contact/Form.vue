@@ -4,7 +4,7 @@
             <div class="layout-op position-absolute"></div>
             <div class="container p-5">
                 <div class="row">
-                    <div class="contact-cont p-5">
+                    <div class="contact-cont p-lg-5 p-4">
                         <div class="text-cont">
                             <h3 class="text-blue"><p class="dots float-left mt-2  mr-2"/>Contact us</h3>
                             <p>We are here to answer your all the questions</p>
@@ -30,7 +30,7 @@
 
                                     <div class="col-md-6">
                                         <label for="email" class="inp">
-                                            <input type="text" id="email" placeholder=" ">
+                                            <input type="text" id="email1" placeholder=" ">
                                             <span class="label">Email</span>
                                             <span class="border"/>
                                         </label>

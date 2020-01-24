@@ -34,4 +34,11 @@
         color: #011f34;
     }
 
+    @media all and (max-width: 460px) {
+        .title {
+            font-size: 32px;
+        }
+
+    }
+
 </style>

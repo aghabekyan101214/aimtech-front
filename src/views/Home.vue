@@ -1,15 +1,14 @@
 <template>
     <div class="home">
-        <Menu/>
         <section class="section-first rounded-section mt-0">
             <div class="container">
                 <div class="row section1-text-row">
                     <div class="section1-text-container col-md-9">
                         <h1>Helping Your <br> <span class="text-blue">Business Grow</span></h1>
-                        <p class="mt-lg-5 section-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequatur deserunt dolorem doloremque eos expedita itaque libero modi nam non nostrum obcaecati, placeat quidem sapiente ullam vel velit, veniam voluptas.</p>
+                        <p class="mt-lg-5 section-text">When you can’t afford to get it wrong we’re here to help.We are here to help you in taking your business to the next level by bringing to life the software you really need.</p>
                     </div>
                     <div class="col-md-12">
-                        <router-link to="/" class="btn rounded-btn">Our Projects</router-link>
+                        <router-link to="/portfolio" class="btn rounded-btn">Our Projects</router-link>
                     </div>
                 </div>
             </div>
@@ -19,7 +18,6 @@
         <Portfolio/>
         <About/>
         <WhatWeDo/>
-        <ContactUs/>
 
     </div>
 </template>
@@ -30,7 +28,6 @@
     import Portfolio from "../components/home/Portfolio";
     import About from "../components/home/About";
     import WhatWeDo from "../components/home/WhatWeDo";
-    import ContactUs from "../components/home/ContactUs";
     import LittleSection from "../components/home/LittleSection";
 
     export default {
@@ -42,7 +39,7 @@
             Services,
             Portfolio,
             About,
-            ContactUs
+            // ContactUs
         },
     }
 </script>
@@ -141,9 +138,6 @@
         }
         .VueCarousel-slide{
             flex-direction: column;
-        }
-        .section-first{
-            clip-path: polygon(0% 0%,100% 0%,100% 96%,0 100%);
         }
     }
     @media all and (max-width: 320px){
