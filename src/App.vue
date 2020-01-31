@@ -20,64 +20,61 @@
         <router-view/>
         <footer class="rounded-section overflow-hidden mb-0">
             <div class="container-fluid mb-0">
-                <div class="row border-bottom pt-5 pb-3 align-items-center footer-row">
-                    <div class="col-md-2 pl-lg-0">
-                        <p>Have any questions ?</p>
+                <div class="row border-bottom pt-5 pb-3 align-items-center footer-row ">
+                    <div class="col-md-2 pl-md-0">
+                        <p class="mb-md-0"><img src="./assets/images/reply.svg" alt="Reply Aimtech"> info@aimtech.am</p>
                     </div>
-                    <div class="col-md-2">
-                        <p><img src="./assets/images/reply.svg" alt="Reply Aimtech"> info@aimtech.am</p>
+                    <div class="col-md-3 pr-md-0">
+                        <p class="mb-md-0"> <img src="./assets/images/location.svg" alt="Loaction Aimtech"> H. Hakobyan 3, Yerevan, Armenia</p>
                     </div>
-                    <div class="col-md-2">
-                        <p> <img src="./assets/images/location.svg" alt="Loaction Aimtech"> H. Hakobyan 3, Yerevan, Armenia</p>
+                    <div class="col-md-3">
+                        <p class="mb-md-0"> <img src="./assets/images/call.svg" alt="Phone Aimtech"> +374 55 02 34 20</p>
                     </div>
-                    <div class="col-md-2">
-                        <p> <img src="./assets/images/call.svg" alt="Phone Aimtech"> +374 55 02 34 20</p>
-                    </div>
-                    <div class="col-md-4 footer-logo-cont justify-content-end text-right">
+                    <div class="col-md-3 footer-logo-cont d-none d-lg-block justify-content-end text-right">
                         <img class="img-fluid d-block" src="./assets/images/logo.png" alt="">
                     </div>
                 </div>
-                <div class="row pt-5 pb-3">
-                    <div class="col-lg-4 col-12 col-sm-12 pl-lg-0">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores consequatur debitis, distinctio dolore doloribus ea eos id incidunt ipsum nisi nobis non optio quibusdam sapiente sint sit ullam veniam.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolore molestias nam! Doloribus, fugit inventore magni maiores nemo, nesciunt nihil nulla officiis provident quam quis reiciendis saepe temporibus, vel voluptatibus?</p>
-                    </div>
-                    <div class="col-6 col-lg-2 col-sm-6">
-                        <ul>
-                            <li> <router-link to="/about">About</router-link></li>
-                            <li> <router-link to="#">What We Do</router-link></li>
-                            <li><router-link to="#">Sales Books</router-link></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-lg-2 col-sm-6">
-                        <ul>
-                            <li> <router-link to="#">Training Programs</router-link></li>
-                            <li><router-link to="#">Case Studies</router-link></li>
-                            <li><router-link to="/contact">Contact us</router-link></li>
-                        </ul>
-                    </div>
-                </div>
+<!--                <div class="row pt-5 pb-3">-->
+<!--                    <div class="col-lg-4 col-12 col-sm-12 pl-lg-0">-->
+<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores consequatur debitis, distinctio dolore doloribus ea eos id incidunt ipsum nisi nobis non optio quibusdam sapiente sint sit ullam veniam.</p>-->
+<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolore molestias nam! Doloribus, fugit inventore magni maiores nemo, nesciunt nihil nulla officiis provident quam quis reiciendis saepe temporibus, vel voluptatibus?</p>-->
+<!--                    </div>-->
+<!--                    <div class="col-6 col-lg-2 col-sm-6">-->
+<!--                        <ul>-->
+<!--                            <li> <router-link to="/about">About</router-link></li>-->
+<!--                            <li> <router-link to="#">What We Do</router-link></li>-->
+<!--                            <li><router-link to="#">Sales Books</router-link></li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                    <div class="col-6 col-lg-2 col-sm-6">-->
+<!--                        <ul>-->
+<!--                            <li> <router-link to="#">Training Programs</router-link></li>-->
+<!--                            <li><router-link to="#">Case Studies</router-link></li>-->
+<!--                            <li><router-link to="/contact">Contact us</router-link></li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
             </div>
-            <div class="footer pt-4 pb-4">
+            <div class="footer pt-4 pb-2">
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-2 col-md-1">
-                            <a href="#" class="img-cont d-flex align-items-center justify-content-center">
+                        <div class="col-2 col-md-1 d-flex justify-content-center">
+                            <a href="https://www.linkedin.com/company/aimtech-llc" target="_blank" class="img-cont d-flex align-items-center justify-content-center">
                                 <img src="./assets/images/linkedin.svg" alt="Linkedin Logo Aimtech">
                             </a>
                         </div>
-                        <div class="col-2 col-md-1">
-                            <a href="#" class="img-cont d-flex align-items-center justify-content-center">
+                        <div class="col-2 col-md-1 d-flex justify-content-center">
+                            <a href="https://www.facebook.com/aimtecham/" target="_blank" class="img-cont d-flex align-items-center justify-content-center">
                                 <img src="./assets/images/facebook.svg" alt="Facebook Logo Aimtech">
                             </a>
                         </div>
-                        <div class="col-2 col-md-1">
-                            <a href="#" class="img-cont d-flex align-items-center justify-content-center">
+                        <div class="col-2 col-md-1 d-flex justify-content-center">
+                            <a href="https://www.instagram.com/aimtech_am" target="_blank" class="img-cont d-flex align-items-center justify-content-center">
                                 <img src="./assets/images/instagram.svg" alt="Instagram Logo Aimtech">
                             </a>
                         </div>
-                        <div class="col-md-12 mt-3">
-                            <p class="text-center m-0">Copyright AimTech - {{ new Date().getFullYear() }}. All Rights Reserved.</p>
+                        <div class="col-md-12 mt-4">
+                            <p class="text-center m-0 cr">Copyright AimTech - {{ new Date().getFullYear() }}. All Rights Reserved.</p>
                         </div>
                     </div>
                 </div>
@@ -201,7 +198,12 @@
         list-style-type: none;
         text-align: right;
         position: relative;
+        margin-left: 50px;
     }
+    .cr {
+        font-size: 11px;
+    }
+
     .header ul li a {
         color: #ffffff;
         font-size: 18px;

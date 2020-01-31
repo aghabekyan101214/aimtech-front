@@ -28,7 +28,7 @@
 
                         <slide>
                             <div class="col-lg-3 col-md-5 p-0">
-                                <img class="img-fluid" v-lazy="require('../../assets/images/pre-discovery.jpg')" alt="a">
+                                <img class="img-fluid" v-lazy="require('../../assets/images/whatwedo/discovery-min.jpg')" alt="a">
                             </div>
                             <div class="col-md-6 slider-text-cont pl-lg-5 pl-md-3">
                                 <p class="slider-title mb-3">Discovery Phase</p>
@@ -39,7 +39,7 @@
 
                         <slide>
                             <div class="col-lg-3 col-md-5 p-0">
-                                <img class="img-fluid" v-lazy="require('../../assets/images/pre-discovery.jpg')" alt="a">
+                                <img class="img-fluid" v-lazy="require('../../assets/images/whatwedo/planning-min.jpg')" alt="a">
                             </div>
                             <div class="col-md-6 slider-text-cont pl-lg-5 pl-md-3">
                                 <p class="slider-title mb-3">Planning</p>
@@ -50,7 +50,7 @@
 
                         <slide>
                             <div class="col-lg-3 col-md-5 p-0">
-                                <img class="img-fluid" v-lazy="require('../../assets/images/pre-discovery.jpg')" alt="a">
+                                <img class="img-fluid" v-lazy="require('../../assets/images/whatwedo/design-min.jpg')" alt="a">
                             </div>
                             <div class="col-md-6 slider-text-cont pl-lg-5 pl-md-3">
                                 <p class="slider-title mb-3">Design</p>
@@ -61,7 +61,7 @@
 
                         <slide>
                             <div class="col-lg-3 col-md-5 p-0">
-                                <img class="img-fluid" v-lazy="require('../../assets/images/pre-discovery.jpg')" alt="a">
+                                <img class="img-fluid" v-lazy="require('../../assets/images/whatwedo/development-min.jpg')" alt="a">
                             </div>
                             <div class="col-md-6 slider-text-cont pl-lg-5 pl-md-3">
                                 <p class="slider-title mb-3">Development</p>
@@ -72,7 +72,7 @@
 
                         <slide>
                             <div class="col-lg-3 col-md-5 p-0">
-                                <img class="img-fluid" v-lazy="require('../../assets/images/pre-discovery.jpg')" alt="a">
+                                <img class="img-fluid" v-lazy="require('../../assets/images/whatwedo/testing-min.jpg')" alt="a">
                             </div>
                             <div class="col-md-6 slider-text-cont pl-lg-5 pl-md-3">
                                 <p class="slider-title mb-3">Testing</p>
@@ -84,7 +84,7 @@
 
                         <slide>
                             <div class="col-lg-3 col-md-5 p-0">
-                                <img class="img-fluid" v-lazy="require('../../assets/images/pre-discovery.jpg')" alt="a">
+                                <img class="img-fluid" v-lazy="require('../../assets/images/whatwedo/maintenance-min.jpg')" alt="a">
                             </div>
                             <div class="col-md-6 slider-text-cont pl-lg-5 pl-md-3">
                                 <p class="slider-title mb-3">Maintenance</p>
@@ -126,7 +126,7 @@
                     { variant: 'primary', value: 20 },
                     { variant: 'empty', value: 100 },
                 ],
-                def_name: 'Requirement <br> Engineering'
+                def_name: 'Discovery'
             }
         },
         methods: {

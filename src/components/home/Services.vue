@@ -45,7 +45,7 @@
                             <img class="icon-white" v-lazy="require('../../assets/images/ui-white.png')" alt="UI/UX icon white">
                         </div>
                         <h3>UI/UX Design</h3>
-                        <span>Your website is how your customers experience your brand. Ensure their experience is the best it can be by educating, inspiring, communicating, servicing, and engaging with them.</span>
+                        <span>For us designing starts with end users. First, we get to know what our user's really need then we bring to life the design which users love.</span>
                         <hr>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
                             <img class="icon-white" v-lazy="require('../../assets/images/web-white.png')" alt="Web Development icon white">
                         </div>
                         <h3>Web Development</h3>
-                        <span>We understand the importance of your brand identity for your business success Hence we are here to take care of it starting from a logo design up to creating your brand book.</span>
+                        <span>Your website is how your customers experience your brand. We ensure that your website fully serves your business needs.</span>
                         <hr>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
                             <img class="icon-white" v-lazy="require('../../assets/images/graphic-white.png')" alt="Graphic Design icon white">
                         </div>
                         <h3>Graphic Design</h3>
-                        <span>We design and create 2D, 3D, AR, VR video games with Unity.</span>
+                        <span>We understand the importance of your brand identity for your business success Hence we are here to take care of it professionally.</span>
                         <hr>
                     </div>
                 </div>

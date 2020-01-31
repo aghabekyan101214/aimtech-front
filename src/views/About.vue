@@ -42,7 +42,7 @@
         height: 40px;
         width: 40px;
     }
-    p{
+    .about p{
         color: #1e3e55;
     }
 </style>

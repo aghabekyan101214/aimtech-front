@@ -8,7 +8,7 @@
                 <p class="d-flex"><img src="../../assets/images/reply.svg" alt="Reply Aimtech"> info@aimtech.am</p>
             </div>
             <div class="col-md-3">
-                <p> <img src="../../assets/images/call.svg" alt="Phone Aimtech"> +374 33 93 93 99</p>
+                <p> <img src="../../assets/images/call.svg" alt="Phone Aimtech"> +374 55 02 34 20</p>
             </div>
 <!--            <div class="col-md-3 float-right">-->
 <!--                <p class="text-right text-uppercase">Sign up for free consulting</p>-->

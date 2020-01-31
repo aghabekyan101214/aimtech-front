@@ -4,13 +4,13 @@
             <div class="layout-op position-absolute"></div>
             <div class="container p-5">
                 <div class="row">
-                    <div class="contact-cont p-lg-5 p-4">
+                    <div class="contact-cont p-lg-5 p-4 col-md-8">
                         <div class="text-cont">
                             <h3 class="text-blue"><p class="dots float-left mt-2  mr-2"/>Contact us</h3>
                             <p>We are here to answer your all the questions</p>
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <label for="full_name" class="inp">
@@ -58,18 +58,19 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-6 p-lg-5 p-md-5 d-none d-xl-block d-md-block d-sm-block">
-                                <div class="contact-icons-cont p-4">
-                                    <div class="text-area">
-                                        <div class="reach">
-                                            <h3 class="text-blue"><p class="dots float-left mt-2  mr-2"/>Reach us</h3>
-                                        </div>
-                                        <p class="mb-4"><img height="25" class="mr-3" src="../../assets/images/contact/phone.svg"/> +374 55 55 77 44</p>
-                                        <p class="mb-4"><img height="30" class="mr-3" src="../../assets/images/contact/email.svg"/> info@aimtech.am</p>
-                                        <p class="mb-4"><img height="35" class="mr-3" src="../../assets/images/contact/address.svg"/> Hakob Hakobyan 3, Yerevan, Armenia</p>
-                                    </div>
-                                </div>
-                            </div>
+<!--                            <div class="col-md-6 p-lg-5 p-md-5 d-none d-xl-block d-md-block d-sm-block">-->
+<!--                                <div class="contact-icons-cont p-4">-->
+<!--                                    <div class="text-area">-->
+<!--                                        <div class="reach">-->
+<!--                                            <h3 class="text-blue"><p class="dots float-left mt-2  mr-2"/>Reach us</h3>-->
+<!--                                        </div>-->
+<!--                                        <p class="mb-4"><img height="25" class="mr-3" src="../../assets/images/contact/phone.svg"/> +374 55 55 77 44</p>-->
+<!--                                        <p class="mb-4"><img height="30" class="mr-3" src="../../assets/images/contact/email.svg"/> info@aimtech.am</p>-->
+<!--                                        <p class="mb-4"><img height="35" class="mr-3" src="../../assets/images/contact/address.svg"/> Hakob Hakobyan 3, Yerevan, Armenia</p>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
                         </div>
                     </div>
                 </div>
@@ -104,6 +105,7 @@
         position: relative;
         z-index: 10;
         box-shadow: 1px 5px 18px grey;
+        margin: 0 auto;
     }
 
     .dots{

@@ -115,6 +115,12 @@
         color: #1e3e55;
         font-size: 16px;
     }
+    .section-third .VueCarousel-pagination {
+        padding-left: 15px!important;
+        position: relative!important;
+        text-align: left!important;
+        bottom: 0!important;
+    }
 
     @media all and (max-width: 1366px) {
         .section1-text-container h1 {
@@ -138,6 +144,12 @@
         }
         .VueCarousel-slide{
             flex-direction: column;
+        }
+        .section-third .VueCarousel-pagination {
+            padding-left: 0!important;
+            position: relative!important;
+            text-align: center!important;
+            bottom: 0!important;
         }
     }
     @media all and (max-width: 320px){
