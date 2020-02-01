@@ -3,7 +3,7 @@
         <div class="container-fluid main-cont rounded-section mt-0">
             <div class="container">
                 <div class="row">
-                    <h2 class="title">About <span class="text-blue">Us</span></h2>
+<!--                    <h2 class="title">About <span class="text-blue">Us</span></h2>-->
                 </div>
             </div>
         </div>
@@ -29,7 +29,7 @@
 <style>
     .main-cont{
         height: 390px;
-        background-image: url("../assets/images/about/header-img-min.jpg");
+        background-image: url("../assets/images/about/about-min.jpg");
         background-size: cover;
         display: flex;
         align-items: center;

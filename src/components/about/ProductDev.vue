@@ -10,11 +10,6 @@
                         OUR Target
                     </h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur impedit iusto odio repellendus!</p>
-                    <h2 class="section-title2 p-2">
-                        <img class="mr-2" src="../../assets/images/about/target-icon.svg" alt="Target Icon">
-                        OUR Target
-                    </h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur impedit iusto odio repellendus!</p>
                 </div>
                 <div class="col-md-6 pr-md-0 pr-xl-0 text-lg-right text-md-right">
                     <img class="img-fluid" src="../../assets/images/about/main-img-min.jpg" alt="">

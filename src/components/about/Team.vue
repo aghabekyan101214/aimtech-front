@@ -10,7 +10,7 @@
                     </div>
                     <div class="about position-absolute text-center pt-1 pb-1">
                         <p class="m-0">Marianna Atshemyan</p>
-                        <p class="m-0">Web Developer</p>
+                        <p class="m-0">Front End and Wordpress Developer</p>
                     </div>
                 </div>
 
@@ -50,7 +50,7 @@
                     </div>
                     <div class="about position-absolute text-center pt-1 pb-1">
                         <p class="m-0">Aniya Gharibyan</p>
-                        <p class="m-0">UI/UX Designer</p>
+                        <p class="m-0">Graphic Designer</p>
                     </div>
                 </div>
 

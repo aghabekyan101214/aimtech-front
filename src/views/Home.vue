@@ -45,7 +45,7 @@
 </script>
 <style>
     .section-first{
-        height: 100vh;
+        height: 85vh;
         background-image: url("../assets/images/section1-bg.jpeg");
         background-size: cover;
         display: flex;
@@ -139,9 +139,9 @@
             position: relative!important;
             bottom: 0!important;
         }
-        .VueCarousel h2{
-            text-align: center;
-        }
+        /*.VueCarousel h2{*/
+        /*    text-align: center;*/
+        /*}*/
         .VueCarousel-slide{
             flex-direction: column;
         }

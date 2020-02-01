@@ -2,14 +2,66 @@
     <div class="jobs rounded-section">
         <div class="container pt-5 pb-5">
 
-            <div class="row align-items-center mb-4">
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                    <div class="logo-cont mb-3">
+                        <img class="img-fluid" src="../../assets/images/portfolio/meet-me-live.png" alt="Meet Me Live Logo">
+                    </div>
+                    <h2 class="title-portfolio mb-3">Meet Me Live </h2>
+                    <div class="text-container">
+                        <p class="slider-subtitle mb-1">Project Overview</p>
+                        <p class="slider-text mb-4">Meet Me Live is a toolkit for storytellers. Create beautiful and engaging stories and connect with the creative community. Export your stories in high resolution for seamless sharing to other platforms.</p>
+                        <p class="slider-subtitle mb-1">Technical Aspects</p>
+                        <p class="slider-text">Meet Me Live app is developed the ios platform using SWIFT, and Ruby on Rails for the backend.MML360 supports capturing videos in movie mode in the form of QuiBis.</p>
+                    </div>
+                    <div class="button-cont">
+                        <a href="#">
+                            <button class="btn app-store-button"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-lg-right text-md-right">
+                    <img class="img-fluid" src="../../assets/images/portfolio/meet-me-live-min.png" alt="Meet Me Live">
+                </div>
+            </div>
+
+            <div class="row align-items-center mb-5 reverse">
+                <div class="col-md-6 text-lg-right text-md-right">
+                    <img class="img-fluid" src="../../assets/images/portfolio/birdline.png" alt="Birdline">
+                </div>
+                <div class="col-md-6">
+                    <div class="logo-cont mb-3">
+                        <img class="img-fluid" src="../../assets/images/portfolio/birdline-logo.png" alt="Birdline Logo">
+                    </div>
+                    <h2 class="title-portfolio mb-3">Birdline</h2>
+                    <div class="text-container">
+                        <p class="slider-subtitle mb-1">Project Overview</p>
+                        <p class="slider-text mb-4">Birdline is a platform for android and ios which allows users to create and design postcards through the app and mention to whom they want to send. The recipient will receive a physical printed version of the postcard in an envelope to their post box, similar to the traditional method.</p>
+                        <p class="slider-subtitle mb-1">Technical Aspects</p>
+                        <p class="slider-text">Birdline app is developed for both ios and android platforms using SWIFT and Kotlin respectively. While the admin can access the admin dashboard through a web based friendly interface developed using Node.js</p>
+                    </div>
+                    <div class="button-cont">
+                        <a href="#">
+                            <button class="btn app-store-button"/>
+                        </a>
+                        <a href="#">
+                            <button class="btn play-market-button"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center mb-5">
                 <div class="col-md-6">
                     <div class="logo-cont mb-3">
                         <img class="img-fluid" src="../../assets/images/portfolio/slavmed-logo.png" alt="Slavmed Logo Aimtech">
                     </div>
-                    <h2 class="title-portfolio mb-3">Doctor's Application</h2>
+                    <h2 class="title-portfolio mb-3">AAC Promoitalia</h2>
                     <div class="text-container">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem deserunt itaque saepe velit. Architecto asperiores aspernatur autem cum eveniet ex laborum nobis optio quisquam, totam ut veniam, voluptatem. Fugiat, vero?</p>
+                        <p class="slider-subtitle mb-1">Project Overview</p>
+                        <p class="slider-text mb-4">AAC Promoitalia is an application for users seeking for cosmetic services provided by Slavmed. Using the application, user may search and get educated about all the service, and book an appointment.</p>
+                        <p class="slider-subtitle mb-1">Technical Aspects</p>
+                        <p class="slider-text">AAC Promoitalia app is developed for both ios and android platforms using SWIFT and Kotlin respectively. While the admin can access the admin dashboard through a web based friendly interface developed using PHP with Laravel Framework.</p>
                     </div>
                     <div class="button-cont">
                         <a href="#">
@@ -30,14 +82,15 @@
                     <img class="img-fluid" src="../../assets/images/portfolio/my-forest.png" alt="MyforestArmenia">
                 </div>
                 <div class="col-md-6">
-                    <div class="logo-cont mb-3 text-lg-right text-md-right">
+                    <div class="logo-cont mb-3">
                         <img class="img-fluid" src="../../assets/images/portfolio/myforest-logo-min.png" alt="MyforestArmenia">
                     </div>
-                    <h2 class="title-portfolio mb-3 text-lg-right text-md-right">My Forest Armenia</h2>
+                    <h2 class="title-portfolio mb-3">My Forest Armenia</h2>
                     <div class="text-container">
-                        <p class="text-lg-right text-md-right">myforestarmenia.org is a web platform that is designed for promoting reforestation in Armenia and fighting to recover the CO2 levels created by humans.</p>
-                        <p class="text-lg-right text-md-right">MyForestArmenia raises awareness that each of us is responsible for the pollution we cause by our regular daily actions.</p>
-                        <p class="text-lg-right text-md-right">It offers tools like the carbon calculator which calculates the amount of CO2 emission caused by each individual, based on the flights, rides and other factors, and then offsets the number of trees which need to be plated to recover and eventually it calculates the cost and lets the user do a donation.</p>
+                        <p class="slider-subtitle mb-1">Project Overview</p>
+                        <p>myforestarmenia.org is a web platform that is designed for promoting reforestation in Armenia and fighting to recover the CO2 levels created by humans.MyForestArmenia raises awareness that each of us is responsible for the pollution we cause by our regular daily actions.</p>
+                        <p class="slider-subtitle mb-1">Technical Aspects</p>
+                        <p>It offers tools like the carbon calculator which calculates the amount of CO2 emission caused by each individual, based on the flights, rides and other factors, and then offsets the number of trees which need to be plated to recover and eventually it calculates the cost and lets the user do a donation.</p>
                     </div>
                     <div class="button-cont text-lg-right text-md-right">
                         <a href="http://myforestarmenia.org" target="_blank" class="btn rounded-btn">Visit Website</a>
@@ -48,65 +101,21 @@
             <div class="row align-items-center mb-4">
                 <div class="col-md-6">
                     <div class="logo-cont mb-3">
-                        <img class="img-fluid" src="../../assets/images/portfolio/birdline-logo.png" alt="Birdline Logo">
-                    </div>
-                    <h2 class="title-portfolio mb-3">Birdline</h2>
-                    <div class="text-container">
-                        <p>Birdline is a platform for android and ios which allows users to create and design postcards through the app and mention to whom they want to send.
-                            The recipient will receive a physical printed version of the postcard, in an envelope to their post box, similar to the traditional method.</p>
-                    </div>
-                    <div class="button-cont">
-                        <a href="#">
-                            <button class="btn app-store-button"/>
-                        </a>
-                        <a href="#">
-                            <button class="btn play-market-button"/>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 text-lg-right text-md-right">
-                    <img class="img-fluid" src="../../assets/images/portfolio/placeholder.png" alt="Birdline">
-                </div>
-            </div>
-
-            <div class="row align-items-center mb-4 reverse">
-                <div class="col-md-6">
-                    <img class="img-fluid" src="../../assets/images/portfolio/abakus-min.png" alt="Abakus">
-                </div>
-                <div class="col-md-6">
-                    <div class="logo-cont mb-3 text-lg-right text-md-right">
                         <img class="img-fluid" src="../../assets/images/portfolio/abakus-logo.png" alt="Abakus logo">
                     </div>
-                    <h2 class="title-portfolio mb-3 text-lg-right text-md-right">Abakus Europe-Kuwait</h2>
+                    <h2 class="title-portfolio mb-3">Abakus Europe-Kuwait</h2>
                     <div class="text-container">
-                        <p class="text-lg-right text-md-right">Abakus Europe – Kuwait, founded on the principle of believing on a child’s improvement and development. They provide to the children with unparalleled opportunities, to learn and develop their cognitive and intellectual abilities. </p>
-                        <p class="text-lg-right text-md-right">Through the website, users may learn in detail about their services, check the curriculum, contact for booking, download brochure of the franchise and a lot more.</p>
+                        <p class="slider-subtitle mb-1">Project Overview</p>
+                        <p>Abakus Europe – Kuwait, founded on the principle of believing on a child’s improvement and development. They provide to the children with unparalleled opportunities, to learn and develop their cognitive and intellectual abilities. </p>
+                        <p class="slider-subtitle mb-1">Technical Aspects</p>
+                        <p>Through the website, users may learn in detail about their services, check the curriculum, contact for booking, download brochure of the franchise and a lot more.</p>
                     </div>
-                    <div class="button-cont text-lg-right text-md-right">
+                    <div class="button-cont">
                         <a href="http://www.abakus-kwt.com/" target="_blank" class="btn rounded-btn">Visit Website</a>
                     </div>
                 </div>
-            </div>
-
-            <div class="row align-items-center mb-4">
                 <div class="col-md-6">
-                    <div class="logo-cont mb-3">
-                        <img class="img-fluid" src="../../assets/images/portfolio/meet-me-live.png" alt="Meet Me Live Logo">
-                    </div>
-                    <h2 class="title-portfolio mb-3">Meet Me Live </h2>
-                    <div class="text-container">
-                        <p>Meet Me Live is a place to create videos and images on mobile, express moments in the form of stories, and connect with the creative community. M|ML 360 is the new photo & camera app for the people who love creating and communicating through UGC</p>
-                        <p>Capture action & movement with this unprecedented app. Auto-adjust for angle and enhancement for image correction while you shoot. State-of-the-art HDR shooting that automatically assesses the light around you before you snap, guaranteeing sharp results in tricky lighting situations.</p>
-                        <p>Meet Me Live is a toolkit for storytellers. Create beautiful and engaging stories.  Export your stories in high resolution for seamless sharing to other platforms.</p>
-                    </div>
-                    <div class="button-cont">
-                        <a href="#">
-                            <button class="btn app-store-button"/>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 text-lg-right text-md-right">
-                    <img class="img-fluid" src="../../assets/images/portfolio/meet-me-live-min.png" alt="Meet Me Live">
+                    <img class="img-fluid" src="../../assets/images/portfolio/abakus-min.png" alt="Abakus">
                 </div>
             </div>
 
@@ -164,5 +173,13 @@
         .jobs .container > .row:last-child {
             border-bottom: none;
         }
+    }
+    .slider-subtitle{
+        letter-spacing: 2px;
+        font-size: 18px;
+        color: #36a8e0;
+    }
+    .rounded-section .row.align-items-center{
+        margin-bottom: 70px!important;
     }
 </style>

@@ -29,9 +29,9 @@
                                     </div>
 
                                     <div class="col-md-6">
-                                        <label for="email" class="inp">
-                                            <input type="text" id="email1" placeholder=" ">
-                                            <span class="label">Email</span>
+                                        <label for="company" class="inp">
+                                            <input type="text" id="company" placeholder=" ">
+                                            <span class="label">Company Name</span>
                                             <span class="border"/>
                                         </label>
                                     </div>
@@ -121,7 +121,7 @@
     .inp {
         position: relative;
         margin: auto;
-        padding-top: 35px;
+        margin-top: 35px;
         width: 100%;
         max-width: 400px;
         margin-left: 0;
@@ -129,7 +129,6 @@
 
     .inp .label {
         position: absolute;
-        top: 40px;
         left: 0;
         font-size: 17px;
         color: #0c4a80;

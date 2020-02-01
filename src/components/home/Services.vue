@@ -45,7 +45,7 @@
                             <img class="icon-white" v-lazy="require('../../assets/images/ui-white.png')" alt="UI/UX icon white">
                         </div>
                         <h3>UI/UX Design</h3>
-                        <span>For us designing starts with end users. First, we get to know what our user's really need then we bring to life the design which users love.</span>
+                        <span>UI/UX design is all about the end user. First, we analyze what users want to see and experience and then we bring the design to life.</span>
                         <hr>
                     </div>
                 </div>
@@ -53,12 +53,12 @@
                 <div class="col-md-6 col-lg-4 col-12 col-sm-6 mb-5">
                     <div class="service-block" ref="block4" @mouseleave="leave">
                         <div class="hover" @mousemove="effect"></div>
-                        <div class="icon-cont">
+                        <div class="icon-cont mb-8">
                             <img class="icon-blue little" v-lazy="require('../../assets/images/game-blue.png')" alt="Game Development icon blue">
                             <img class="icon-white little" v-lazy="require('../../assets/images/game-white.png')" alt="Game Development icon white">
                         </div>
                         <h3>Game Development</h3>
-                        <span>For us designing starts with end users. We put ourselves in the user’s shoes to understand what they really need. The creative part of us then has a solid platform to define color, messaging, layout, and everything else.</span>
+                        <span>Our experience in Unity3d goes back to 2006! We design and create 2D, 3D, AR, VR video games for huge list of platform Unity3d supports.</span>
                         <hr>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
                             <img class="icon-white" v-lazy="require('../../assets/images/web-white.png')" alt="Web Development icon white">
                         </div>
                         <h3>Web Development</h3>
-                        <span>Your website is how your customers experience your brand. We ensure that your website fully serves your business needs.</span>
+                        <span>Your website is your online presence and identity. We ensure your website serves your customers more than what they want to see.</span>
                         <hr>
                     </div>
                 </div>
@@ -157,6 +157,9 @@
         padding-bottom: 50px;
         background: #fff;
     }
+    .mb-8{
+        margin-bottom: 18px!important;
+    }
     .icon-white{
         transition: .3s;
         display: none;
@@ -181,7 +184,7 @@
         color: #6b6b6b;
         transition: .3s;
         display: block;
-        min-height: 85px;
+        min-height: 100px;
     }
     .service-block:hover span {
         color: white;

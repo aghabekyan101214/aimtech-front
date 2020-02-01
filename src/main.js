@@ -7,7 +7,7 @@ import VueLazyload from 'vue-lazyload'
 
 // or with options
 Vue.use(VueLazyload, {
-  loading: 'loader.gif',
+  // loading: 'loader.gif',
 })
 
 import 'bootstrap/dist/css/bootstrap.css'

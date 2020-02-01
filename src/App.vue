@@ -30,8 +30,8 @@
                     <div class="col-md-3">
                         <p class="mb-md-0"> <img src="./assets/images/call.svg" alt="Phone Aimtech"> +374 55 02 34 20</p>
                     </div>
-                    <div class="col-md-3 footer-logo-cont d-none d-lg-block justify-content-end text-right">
-                        <img class="img-fluid d-block" src="./assets/images/logo.png" alt="">
+                    <div class="col-md-4 footer-logo-cont d-none d-lg-block justify-content-end text-right">
+                        <img class="img-fluid" src="./assets/images/logo.png" alt="">
                     </div>
                 </div>
 <!--                <div class="row pt-5 pb-3">-->
@@ -137,9 +137,16 @@
         padding: 0 15px!important;
     }
     .sticky a {
-        color: black!important;
+        color: #0c4a80!important;
         font-family: robotolight, sans-serif;
         font-size: 16px!important;
+        transition: .3s;
+    }
+    .sticky a:hover{
+        color: #2fa9de!important;
+    }
+    .sticky .router-link-exact-active{
+        color: #2fa9de!important;
     }
     .navbar-nav a{
         font-family: robotolight, sans-serif;

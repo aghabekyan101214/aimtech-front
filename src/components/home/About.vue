@@ -3,9 +3,10 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 col-xs-12 text-cont">
-                    <h2 class="title mb-5">The Problem-Solving <br> Technology Partnership</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium doloribus est iure nihil optio placeat, velit? Consequatur corporis doloremque doloribus ipsum iste nemo optio possimus reprehenderit vero voluptas! Consectetur, facere.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consectetur cumque eaque eum eveniet exercitationem illo incidunt minima nostrum nulla pariatur perferendis praesentium quam quidem, repudiandae sed sequi sunt totam.</p>
+                    <h2 class="title mb-5">The Problem-Solving <br> <span class="text-blue">Technology Partnership</span></h2>
+                    <p> <span class="text-blue">“</span> Communication is the foundation of success <span class="text-blue">”</span> ~ Gary Vaynerchuk</p>
+                    <p> <span class="text-blue">“</span> Saying hello doesn’t have an ROI. It’s about building relationships <span class="text-blue">”</span> ~ Gary Vaynerchuck</p>
+                    <p>Communication is what makes Aimtech unique. We invest our time in deeply understanding our clients and their needs. We study their industry, analyze the market and propose our suggestions to our clients which clarifies what and how they want their product to be and that’s how we build solid and meaningful relationships.</p>
                 </div>
                 <div class="col-md-6 col-xs-12">
                     <img class="img-fluid" v-lazy="require('../../assets/images/problem-solving.jpg')" alt="">
@@ -39,6 +40,9 @@
             font-size: 32px;
         }
 
+    }
+    .text-cont .text-blue{
+        font-size: 22px;
     }
 
 </style>

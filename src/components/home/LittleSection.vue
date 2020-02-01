@@ -13,8 +13,8 @@
 <!--            <div class="col-md-3 float-right">-->
 <!--                <p class="text-right text-uppercase">Sign up for free consulting</p>-->
 <!--            </div>-->
-            <div class="col-md-2 float-right">
-                <router-link to="/contact-us" class="text-right text-white text-uppercase">Contact us</router-link>
+            <div class="col-md-4 float-right text-right pr-5">
+                <router-link to="/get-quote" class="rounded-btn text-right text-white text-uppercase">Get a Quote</router-link>
             </div>
         </div>
     </div>
@@ -43,5 +43,8 @@
     .info-section p img {
         height: 15px;
         padding-right: 15px;
+    }
+    .rounded-btn.text-right{
+        padding: 5px 15px;
     }
 </style>
