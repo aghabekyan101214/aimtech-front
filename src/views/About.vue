@@ -3,13 +3,15 @@
         <div class="container-fluid main-cont rounded-section mt-0">
             <div class="container">
                 <div class="row">
-<!--                    <h2 class="title">About <span class="text-blue">Us</span></h2>-->
+                    <div class="col-md-12 text-right">
+                        <img class="img-fluid about-text" src="../assets/images/about/about-text.png" alt="Text">
+                    </div>
                 </div>
             </div>
         </div>
         <ProductDev/>
         <Team/>
-        <Partners/>
+<!--        <Partners/>-->
     </div>
 </template>
 <script>
@@ -44,5 +46,17 @@
     }
     .about p{
         color: #1e3e55;
+    }
+    @media all and (max-width: 460px) {
+        .about-text {
+            height: 110px;
+        }
+        .about .main-cont .col-md-12.text-right{
+            padding-right: 0;
+        }
+        .about .container{
+            padding-right: 0;
+        }
+
     }
 </style>

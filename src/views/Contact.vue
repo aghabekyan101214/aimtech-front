@@ -21,7 +21,7 @@
         }
     }
 </script>
-<style>
+<style scoped>
     .main-cont{
         height: 390px;
         background-image: url("../assets/images/about/header-img-min.jpg");

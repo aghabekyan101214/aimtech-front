@@ -29,9 +29,9 @@
                                 <img class="img-fluid slider-logo mb-4" src="../../assets/images/portfolio/myforest-logo-min.png" alt="Myforestarmenia logo">
                                 <h2 class="slider-title mb-5">My Forest Armenia</h2>
                                 <p class="slider-subtitle mb-1">Project Overview</p>
-                                <p class="slider-text mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium adipisci animi assumenda consectetur deserunt dolorem ducimus eum, id ipsa, ipsam iusto minus modi nemo nobis quae repellat sit voluptates?</p>
+                                <p class="slider-text mb-4">myforestarmenia.org is a web platform that is designed for promoting reforestation in Armenia and fighting to recover the CO2 levels created by humans.MyForestArmenia raises awareness that each of us is responsible for the pollution we cause by our regular daily actions.</p>
                                 <p class="slider-subtitle mb-1">Technical Aspects</p>
-                                <p class="slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium adipisci animi assumenda consectetur deserunt dolorem ducimus eum, id ipsa, ipsam iusto minus modi nemo nobis quae repellat sit voluptates?</p>
+                                <p class="slider-text">It offers tools like the carbon calculator which calculates the amount of CO2 emission caused by each individual, based on the flights, rides and other factors, and then offsets the number of trees which need to be plated to recover and eventually it calculates the cost and lets the user do a donation.</p>
                             </div>
                             <div class="col-md-6 text-center">
                                 <img class="img-fluid" v-lazy="require('../../assets/images/portfolio/my-forest.png')" alt="Portfolio image">
@@ -57,9 +57,9 @@
                                 <img class="img-fluid slider-logo mb-4" src="../../assets/images/portfolio/abakus-logo.png" alt="Abakus logo">
                                 <h2 class="slider-title mb-5">Abakus Europe-Kuwait</h2>
                                 <p class="slider-subtitle mb-1">Project Overview</p>
-                                <p class="slider-text mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium adipisci animi assumenda consectetur deserunt dolorem ducimus eum, id ipsa, ipsam iusto minus modi nemo nobis quae repellat sit voluptates?</p>
+                                <p class="slider-text mb-4">Abakus Europe – Kuwait, founded on the principle of believing on a child’s improvement and development. They provide to the children with unparalleled opportunities, to learn and develop their cognitive and intellectual abilities.</p>
                                 <p class="slider-subtitle mb-1">Technical Aspects</p>
-                                <p class="slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium adipisci animi assumenda consectetur deserunt dolorem ducimus eum, id ipsa, ipsam iusto minus modi nemo nobis quae repellat sit voluptates?</p>
+                                <p class="slider-text">Through the website, users may learn in detail about their services, check the curriculum, contact for booking, download brochure of the franchise and a lot more.</p>
                             </div>
                             <div class="col-md-6 text-center">
                                 <img class="img-fluid" v-lazy="require('../../assets/images/portfolio/abakus-min.png')" alt="Portfolio image">
@@ -77,6 +77,20 @@
                             </div>
                             <div class="col-md-6 text-center">
                                 <img class="img-fluid" v-lazy="require('../../assets/images/portfolio/meet-me-live-min.png')" alt="Meet Me Live">
+                            </div>
+                        </slide>
+
+                        <slide>
+                            <div class="col-md-6">
+                                <img class="img-fluid slider-logo mb-4" src="../../assets/images/portfolio/worldOdColors-logo-min.png" alt="World of Colors logo">
+                                <h2 class="slider-title mb-5">World of Colors</h2>
+                                <p class="slider-subtitle mb-1">Project Overview</p>
+                                <p class="slider-text mb-4">World of Colors (Գոյներու Աշխարհ) is an educational game aimed at teaching colors to children.The game features Lala and Ara, two main characters who will guide children through the various levels of the application.</p>
+                                <p class="slider-subtitle mb-1">Technical Aspects</p>
+                                <p class="slider-text">The game is developed using Unity3d supporting both android and ios platforms for mobile devices and tablets.</p>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <img class="img-fluid" v-lazy="require('../../assets/images/portfolio/word-of-colors-600-min.png')" alt="World of Colors">
                             </div>
                         </slide>
 

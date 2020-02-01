@@ -14,7 +14,7 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <label for="full_name" class="inp">
-                                            <input type="text" id="full_name" placeholder=" ">
+                                            <input type="text" v-model="full_name" id="full_name" placeholder=" ">
                                             <span class="label">Full Name</span>
                                             <span class="border"/>
                                         </label>
@@ -22,7 +22,7 @@
 
                                     <div class="col-md-6">
                                         <label for="phone" class="inp">
-                                            <input type="text" id="phone" placeholder=" ">
+                                            <input type="text" v-model="phone" id="phone" placeholder=" ">
                                             <span class="label">Phone Number</span>
                                             <span class="border"/>
                                         </label>
@@ -30,7 +30,7 @@
 
                                     <div class="col-md-6">
                                         <label for="company" class="inp">
-                                            <input type="text" id="company" placeholder=" ">
+                                            <input type="text" v-model="company" id="company" placeholder=" ">
                                             <span class="label">Company Name</span>
                                             <span class="border"/>
                                         </label>
@@ -38,7 +38,7 @@
 
                                     <div class="col-md-6">
                                         <label for="email" class="inp">
-                                            <input type="text" id="email" placeholder=" ">
+                                            <input type="email" v-model="email" id="email" placeholder=" ">
                                             <span class="label">Email</span>
                                             <span class="border"/>
                                         </label>
@@ -46,14 +46,14 @@
 
                                     <div class="col-md-12">
                                         <label for="message" class="inp message">
-                                            <textarea name="message" id="message"/>
+                                            <textarea v-model="message" name="message" id="message"/>
                                             <span class="label">Message</span>
                                             <span class="border"/>
                                         </label>
                                     </div>
 
                                     <div class="send-part col-md-12 mt-5">
-                                        <button class="rounded-btn send btn btn-primary">Send Message</button>
+                                        <button class="rounded-btn send btn btn-primary" @click="send">Send Message</button>
                                     </div>
                                 </div>
                             </div>
@@ -81,7 +81,21 @@
 
 <script>
     export default {
-        name: "Form"
+        name: "Form",
+        data: () => {
+            return {
+                full_name: "",
+                phone: "",
+                company: "",
+                email: "",
+                message: ""
+            }
+        },
+        methods: {
+            send() {
+                console.log(this.full_name)
+            }
+        }
     }
 </script>
 
