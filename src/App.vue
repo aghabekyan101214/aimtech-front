@@ -416,5 +416,8 @@
             top: 0 !important;
         }
     }
+    img[lazy="loading"]{
+        height: 50px;
+    }
 
 </style>
