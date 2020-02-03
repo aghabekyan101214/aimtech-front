@@ -40,14 +40,14 @@
                         <p class="slider-subtitle mb-1">Technical Aspects</p>
                         <p class="slider-text">Birdline app is developed for both ios and android platforms using SWIFT and Kotlin respectively. While the admin can access the admin dashboard through a web based friendly interface developed using Node.js</p>
                     </div>
-                    <div class="button-cont">
-                        <a href="#">
-                            <button class="btn app-store-button"/>
-                        </a>
-                        <a href="#">
-                            <button class="btn play-market-button"/>
-                        </a>
-                    </div>
+<!--                    <div class="button-cont">-->
+<!--                        <a href="#">-->
+<!--                            <button class="btn app-store-button"/>-->
+<!--                        </a>-->
+<!--                        <a href="#">-->
+<!--                            <button class="btn play-market-button"/>-->
+<!--                        </a>-->
+<!--                    </div>-->
                 </div>
             </div>
 
@@ -63,14 +63,14 @@
                         <p class="slider-subtitle mb-1">Technical Aspects</p>
                         <p class="slider-text">AAC Promoitalia app is developed for both ios and android platforms using SWIFT and Kotlin respectively. While the admin can access the admin dashboard through a web based friendly interface developed using PHP with Laravel Framework.</p>
                     </div>
-                    <div class="button-cont">
-                        <a href="#">
-                            <button class="btn app-store-button"/>
-                        </a>
-                        <a href="#">
-                            <button class="btn play-market-button"/>
-                        </a>
-                    </div>
+<!--                    <div class="button-cont">-->
+<!--                        <a href="#">-->
+<!--                            <button class="btn app-store-button"/>-->
+<!--                        </a>-->
+<!--                        <a href="#">-->
+<!--                            <button class="btn play-market-button"/>-->
+<!--                        </a>-->
+<!--                    </div>-->
                 </div>
                 <div class="col-md-6 text-lg-right text-md-right">
                     <img class="img-fluid" src="../../assets/images/portfolio/slav-med.png" alt="Slavmed">
