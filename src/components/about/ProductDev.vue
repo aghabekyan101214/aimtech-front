@@ -33,7 +33,7 @@
         background: #fff;
     }
     .section-title{
-        font-size: 32px;
+        font-size: 25px;
         font-family: robotolight, sans-serif;
     }
     .section-title2{
