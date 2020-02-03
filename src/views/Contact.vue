@@ -23,7 +23,7 @@
 </script>
 <style scoped>
     .main-cont{
-        height: 390px;
+        height: 290px;
         background-image: url("../assets/images/about/header-img-min.jpg");
         background-size: cover;
         display: flex;

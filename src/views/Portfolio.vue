@@ -26,8 +26,8 @@
 
 <style scoped>
     .main-cont{
-        height: 390px;
-        background-image: url("../assets/images/about/header-img-min.jpg");
+        height: 290px;
+        background-image: url("../assets/images/portfolio/our-work-min.jpg");
         background-size: cover;
         display: flex;
         align-items: center;
