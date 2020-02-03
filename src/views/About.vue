@@ -31,7 +31,7 @@
 <style>
     .main-cont{
         height: 390px;
-        background-image: url("../assets/images/about/about-min.jpg");
+        background-image: url("../assets/images/about/about-background-min.jpg");
         background-size: cover;
         display: flex;
         align-items: center;
