@@ -419,5 +419,8 @@
     img[lazy="loading"]{
         height: 50px;
     }
+    .navbar-dark .router-link-exact-active{
+        color: #fff!important;
+    }
 
 </style>
