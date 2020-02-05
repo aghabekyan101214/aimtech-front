@@ -8,7 +8,8 @@ const routes = [
     {
         path: '/',
         name: 'home',
-        component: Home
+        component: Home,
+        meta: { title: 'Home' }
     },
     {
         path: '/about',
@@ -16,7 +17,8 @@ const routes = [
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+        component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
+        meta: { title: 'About Us' }
     },
     {
         path: '/portfolio',
@@ -24,7 +26,8 @@ const routes = [
         // route level code-splitting
         // this generates a separate chunk (portfolio.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "portfolio" */ '../views/Portfolio.vue')
+        component: () => import(/* webpackChunkName: "portfolio" */ '../views/Portfolio.vue'),
+        meta: { title: 'Our Work' }
     },
     {
         path: '/contact-us',
@@ -32,7 +35,8 @@ const routes = [
         // route level code-splitting
         // this generates a separate chunk (contact.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "contact" */ '../views/Contact.vue')
+        component: () => import(/* webpackChunkName: "contact" */ '../views/Contact.vue'),
+        meta: { title: 'Contact Us' }
     },
     {
         path: '/get-quote',
@@ -40,7 +44,8 @@ const routes = [
         // route level code-splitting
         // this generates a separate chunk (contact.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "getQuote" */ '../views/getQuote.vue')
+        component: () => import(/* webpackChunkName: "getQuote" */ '../views/getQuote.vue'),
+        meta: { title: 'Get Quote' }
     },
 
 ]
@@ -49,5 +54,8 @@ const router = new VueRouter({
     routes,
     mode: 'history',
 })
+router.afterEach((to, from) => {
+    document.title = "Aimtech | " + to.meta.title;
+});
 
 export default router
