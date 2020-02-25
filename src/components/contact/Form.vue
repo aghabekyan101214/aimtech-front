@@ -14,7 +14,7 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <label for="full_name" class="inp">
-                                            <input type="text" v-model="full_name" id="full_name" placeholder=" ">
+                                            <input type="text" v-model="full_name" id="full_name" ref="full_name" placeholder=" " required>
                                             <span class="label">Full Name</span>
                                             <span class="border"/>
                                         </label>
@@ -22,7 +22,7 @@
 
                                     <div class="col-md-6">
                                         <label for="phone" class="inp">
-                                            <input type="text" v-model="phone" id="phone" placeholder=" ">
+                                            <input type="text" v-model="phone" id="phone" ref="phone" placeholder=" " required>
                                             <span class="label">Phone Number</span>
                                             <span class="border"/>
                                         </label>
@@ -30,7 +30,7 @@
 
                                     <div class="col-md-6">
                                         <label for="company" class="inp">
-                                            <input type="text" v-model="company" id="company" placeholder=" ">
+                                            <input type="text" v-model="company" ref="company" id="company" placeholder=" ">
                                             <span class="label">Company Name</span>
                                             <span class="border"/>
                                         </label>
@@ -38,7 +38,7 @@
 
                                     <div class="col-md-6">
                                         <label for="email" class="inp">
-                                            <input type="email" v-model="email" id="email" placeholder=" ">
+                                            <input type="email" v-model="email" ref="email" id="email" placeholder=" ">
                                             <span class="label">Email</span>
                                             <span class="border"/>
                                         </label>
@@ -46,30 +46,18 @@
 
                                     <div class="col-md-12">
                                         <label for="message" class="inp message">
-                                            <textarea v-model="message" name="message" id="message"/>
+                                            <textarea v-model="message" ref="message" name="message" id="message"/>
                                             <span class="label">Message</span>
                                             <span class="border"/>
                                         </label>
                                     </div>
 
                                     <div class="send-part col-md-12 mt-5">
-                                        <button class="rounded-btn send btn btn-primary" @click="send">Send Message</button>
+                                        <button class="rounded-btn send btn btn-primary" ref="rounded_button" @click="send">Send Message</button>
+                                        <img src="/loader.gif" class="send-loader" ref="loader" alt="Loader">
                                     </div>
                                 </div>
                             </div>
-
-<!--                            <div class="col-md-6 p-lg-5 p-md-5 d-none d-xl-block d-md-block d-sm-block">-->
-<!--                                <div class="contact-icons-cont p-4">-->
-<!--                                    <div class="text-area">-->
-<!--                                        <div class="reach">-->
-<!--                                            <h3 class="text-blue"><p class="dots float-left mt-2  mr-2"/>Reach us</h3>-->
-<!--                                        </div>-->
-<!--                                        <p class="mb-4"><img height="25" class="mr-3" src="../../assets/images/contact/phone.svg"/> +374 55 55 77 44</p>-->
-<!--                                        <p class="mb-4"><img height="30" class="mr-3" src="../../assets/images/contact/email.svg"/> info@aimtech.am</p>-->
-<!--                                        <p class="mb-4"><img height="35" class="mr-3" src="../../assets/images/contact/address.svg"/> Hakob Hakobyan 3, Yerevan, Armenia</p>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
 
                         </div>
                     </div>
@@ -80,6 +68,9 @@
 </template>
 
 <script>
+
+    import axios from "axios";
+
     export default {
         name: "Form",
         data: () => {
@@ -93,7 +84,47 @@
         },
         methods: {
             send() {
-                console.log(this.full_name)
+                if(this.full_name == "") {
+                    this.$refs.full_name.style.borderBottom = "2px solid red";
+                    return;
+                } else if(this.phone == "") {
+                    this.$refs.phone.style.borderBottom = "2px solid red";
+                    return;
+                } else if(this.email == "") {
+                    this.$refs.email.style.borderBottom = "2px solid red";
+                    return;
+                } else if(this.email != "") {
+                    if(this.validateEmail(this.email) === false) {
+                        this.$refs.email.style.borderBottom = "2px solid red";
+                        return;
+                    }
+                }
+                this.$refs.rounded_button.style.display = "none";
+                this.$refs.loader.style.display = "block";
+
+                axios.post('https://emails.aimtech.am', {
+                    full_name: this.full_name,
+                    phone: this.phone,
+                    company: this.company,
+                    email: this.email,
+                    message: this.message,
+                })
+                    .then(function (response) {
+                        alert("Message Sent Successfully");
+                        location.reload();
+                    })
+                    .catch(function (error) {
+                        this.$refs.rounded_button.style.display = "block";
+                        this.$refs.loader.style.display = "none";
+                    });
+
+            },
+            validateEmail(mail){
+                if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)){
+                    return true;
+                }
+
+                return false;
             }
         }
     }
@@ -127,6 +158,10 @@
         width: 13px;
         background-color: #37a7e0;
         border-radius: 50%;
+    }
+    .send-loader {
+        height: 30px;
+        display: none;
     }
     label{
         max-width: 100% !important;
