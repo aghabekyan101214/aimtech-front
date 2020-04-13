@@ -145,6 +145,32 @@
                 </div>
             </div>
 
+            <div class="row align-items-center mb-4">
+                <div class="col-md-6">
+                    <div class="logo-cont mb-3">
+                        <img class="img-fluid" src="../../assets/images/portfolio/world-of-shapes-logo.png" alt="World of Shapes logo">
+                    </div>
+                    <h2 class="title-portfolio mb-4">World of Shapes</h2>
+                    <div class="text-container">
+                        <p class="slider-subtitle mb-1">Project Overview</p>
+                        <p class="slider-text">”World of Shapes” is the second game in the “Lalan ou Aran” series. Lala and Ara, accompany players aged three and up through the game and give them instructions. The child selects one of the main eight shapes and each shape offers 4 games. The games cultivate the child’s aesthetic taste, sharpen visual focus skills, and expand the span of attention.</p>
+                        <p class="slider-subtitle mb-1">Technical Aspects</p>
+                        <p class="slider-text">”World of Shapes”  is developed using Unity3D and Unity native UI tools. We have used particle systems for animations like celebrations and animations with Unity3d’s animation toolset, Mechanim. The app is rich in sound effects and voice overs, free and without ads.</p>
+                    </div>
+                    <div class="button-cont">
+                        <a href="https://apps.apple.com/gb/app/world-of-shapes-eastern/id1332604288" target="_blank">
+                            <button class="btn app-store-button"/>
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.Vasken.TseveruAshkharEA&hl=en" target="_blank">
+                            <button class="btn play-market-button"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid" src="../../assets/images/portfolio/word-of-shapes-600-min.png" alt="World Of Shapes">
+                </div>
+            </div>
+
         </div>
 
 
