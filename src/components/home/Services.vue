@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="mirr-cont">
                     <h2 class="services main-m">Services</h2>
-                    <p>Our Team Designs And Develops Lovable Software Expreiences <br> For A Wide Range Of Connected Products.</p>
+                    <p>Our Team Designs And Develops Lovable Software Experiences <br> For A Wide Range Of Connected Products.</p>
                 </div>
             </div>
         </div>
