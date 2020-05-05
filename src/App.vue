@@ -57,7 +57,7 @@
             <div class="footer pt-4 pb-2">
                 <div class="container">
                     <div class="row justify-content-center align-items-center">
-                        <a href="https://www.appfutura.com/app-developers/armenia" target="_blank" class="badges1 mr-sm-4 mb-4 mb-sm-0">
+                        <a href="https://www.sortlist.com/app-development/armenia-am" target="_blank" class="badges1 mr-sm-4 mb-4 mb-sm-0">
                             <img class="img-fluid" src="./assets/images/badges/badge1.svg" alt="Badge1">
                         </a>
                         <a href="https://www.appfutura.com/app-developers/armenia" target="_blank" class="badges2">
