@@ -145,6 +145,79 @@
                 </div>
             </div>
 
+            <div class="row align-items-center mb-4">
+                <div class="col-md-6">
+                    <div class="logo-cont mb-3">
+                        <img class="img-fluid" src="../../assets/images/portfolio/world-of-shapes-logo.png" alt="World of Shapes logo">
+                    </div>
+                    <h2 class="title-portfolio mb-4">World of Shapes</h2>
+                    <div class="text-container">
+                        <p class="slider-subtitle mb-1">Project Overview</p>
+                        <p class="slider-text">”World of Shapes” is the second game in the “Lalan ou Aran” series. Lala and Ara, accompany players aged three and up through the game and give them instructions. The child selects one of the main eight shapes and each shape offers 4 games. The games cultivate the child’s aesthetic taste, sharpen visual focus skills, and expand the span of attention.</p>
+                        <p class="slider-subtitle mb-1">Technical Aspects</p>
+                        <p class="slider-text">”World of Shapes”  is developed using Unity3D and Unity native UI tools. We have used particle systems for animations like celebrations and animations with Unity3d’s animation toolset, Mechanim. The app is rich in sound effects and voice overs, free and without ads.</p>
+                    </div>
+                    <div class="button-cont">
+                        <a href="https://apps.apple.com/gb/app/world-of-shapes-eastern/id1332604288" target="_blank">
+                            <button class="btn app-store-button"/>
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.Vasken.TseveruAshkharEA&hl=en" target="_blank">
+                            <button class="btn play-market-button"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid" src="../../assets/images/portfolio/word-of-shapes-600-min.png" alt="World Of Shapes">
+                </div>
+            </div>
+
+            <div class="row align-items-center mb-4 reverse">
+                <div class="col-md-6">
+                    <img class="img-fluid" src="../../assets/images/portfolio/ptit-min.png" alt="Ptit">
+                </div>
+                <div class="col-md-6">
+                    <div class="logo-cont mb-3">
+                        <img class="img-fluid" src="../../assets/images/portfolio/ptit-logo-min.png" alt="Ptit Logo">
+                    </div>
+                    <h2 class="title-portfolio mb-4">Ptit</h2>
+                    <div class="text-container">
+                        <p class="slider-subtitle mb-1">Project Overview</p>
+                        <p class="slider-text">Ptit is an Armenian language educational app for children and teenagers. The application consists of short stories, fables, humour, riddles, and emphasizes educational games of three natures: Language games, mathematical games and logic games.</p>
+                        <p class="slider-subtitle mb-1">Technical Aspects</p>
+                        <p class="slider-text">Ptit is developed using Unity3D and Unity native UI tools. We have used particle systems for animations like celebrations and animations with Unity3d’s animation toolset, Mechanim The app is free and without ads, together with its website www.e-ptit.com, provide an interactive means to learn Armenian language as well as to improve logic and mathematical skills.</p>
+                    </div>
+                    <div class="button-cont">
+                        <a href="https://apps.apple.com/am/app/ptit/id1187918147" target="_blank">
+                            <button class="btn app-store-button"/>
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.vaskenbakkalian.ptit&hl=en" target="_blank">
+                            <button class="btn play-market-button"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center mb-4">
+                <div class="col-md-6">
+                    <div class="logo-cont mb-3">
+                        <img class="img-fluid" src="../../assets/images/portfolio/value-shield-logo-min.png" alt="Value Shield logo">
+                    </div>
+                    <h2 class="title-portfolio mb-4">Value Shield</h2>
+                    <div class="text-container">
+                        <p class="slider-subtitle mb-1">Project Overview</p>
+                        <p class="slider-text">Value Shield is a supply chain training, coaching and consulting firm that offers a value shield across all your operations to enhance the satisfaction of your customers, create more value for your organization, and reduce waste across your entire company from source to consumption.</p>
+                        <p class="slider-subtitle mb-1">Technical Aspects</p>
+                        <p class="slider-text">We have worked on the branding of the company. The website is developed using Wordpress. Development duration: 2 weeks.</p>
+                    </div>
+                    <div class="button-cont">
+                        <a href="http://www.value-shield.com/" target="_blank" class="btn rounded-btn">Visit Website</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid" src="../../assets/images/portfolio/value-shield-design-min.png" alt="Value Shield">
+                </div>
+            </div>
+
         </div>
 
 

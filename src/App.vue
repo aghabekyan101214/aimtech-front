@@ -30,49 +30,39 @@
                     <div class="col-md-3">
                         <p class="mb-md-0"> <img src="./assets/images/call.svg" alt="Phone Aimtech"> +374 55 02 34 20</p>
                     </div>
-                    <div class="col-md-4 footer-logo-cont d-none d-lg-block justify-content-end text-right">
-                        <img class="img-fluid" src="./assets/images/logo.png" alt="">
+                    <div class="col-md-4 footer-logo-cont justify-content-md-end text-right">
+<!--                        <img class="img-fluid" src="./assets/images/logo.png" alt="">-->
+                        <div class="row footer-logo-cont">
+                            <div class="col-4 col-md-4 d-flex justify-content-center">
+                                <a href="https://www.linkedin.com/company/aimtech-llc" target="_blank" class="img-cont d-flex align-items-center justify-content-center">
+                                    <img src="./assets/images/linkedin.svg" alt="Linkedin Logo Aimtech">
+                                </a>
+                            </div>
+                            <div class="col-4 col-md-4 d-flex justify-content-center">
+                                <a href="https://www.facebook.com/aimtecham/" target="_blank" class="img-cont d-flex align-items-center justify-content-center">
+                                    <img src="./assets/images/facebook.svg" alt="Facebook Logo Aimtech">
+                                </a>
+                            </div>
+                            <div class="col-4 col-md-4 d-flex justify-content-center">
+                                <a href="https://www.instagram.com/aimtech_am" target="_blank" class="img-cont d-flex align-items-center justify-content-center">
+                                    <img src="./assets/images/instagram.svg" alt="Instagram Logo Aimtech">
+                                </a>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
-<!--                <div class="row pt-5 pb-3">-->
-<!--                    <div class="col-lg-4 col-12 col-sm-12 pl-lg-0">-->
-<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores consequatur debitis, distinctio dolore doloribus ea eos id incidunt ipsum nisi nobis non optio quibusdam sapiente sint sit ullam veniam.</p>-->
-<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolore molestias nam! Doloribus, fugit inventore magni maiores nemo, nesciunt nihil nulla officiis provident quam quis reiciendis saepe temporibus, vel voluptatibus?</p>-->
-<!--                    </div>-->
-<!--                    <div class="col-6 col-lg-2 col-sm-6">-->
-<!--                        <ul>-->
-<!--                            <li> <router-link to="/about">About</router-link></li>-->
-<!--                            <li> <router-link to="#">What We Do</router-link></li>-->
-<!--                            <li><router-link to="#">Sales Books</router-link></li>-->
-<!--                        </ul>-->
-<!--                    </div>-->
-<!--                    <div class="col-6 col-lg-2 col-sm-6">-->
-<!--                        <ul>-->
-<!--                            <li> <router-link to="#">Training Programs</router-link></li>-->
-<!--                            <li><router-link to="#">Case Studies</router-link></li>-->
-<!--                            <li><router-link to="/contact">Contact us</router-link></li>-->
-<!--                        </ul>-->
-<!--                    </div>-->
-<!--                </div>-->
             </div>
             <div class="footer pt-4 pb-2">
                 <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-2 col-md-1 d-flex justify-content-center">
-                            <a href="https://www.linkedin.com/company/aimtech-llc" target="_blank" class="img-cont d-flex align-items-center justify-content-center">
-                                <img src="./assets/images/linkedin.svg" alt="Linkedin Logo Aimtech">
-                            </a>
-                        </div>
-                        <div class="col-2 col-md-1 d-flex justify-content-center">
-                            <a href="https://www.facebook.com/aimtecham/" target="_blank" class="img-cont d-flex align-items-center justify-content-center">
-                                <img src="./assets/images/facebook.svg" alt="Facebook Logo Aimtech">
-                            </a>
-                        </div>
-                        <div class="col-2 col-md-1 d-flex justify-content-center">
-                            <a href="https://www.instagram.com/aimtech_am" target="_blank" class="img-cont d-flex align-items-center justify-content-center">
-                                <img src="./assets/images/instagram.svg" alt="Instagram Logo Aimtech">
-                            </a>
-                        </div>
+                    <div class="row justify-content-center align-items-center">
+                        <a href="https://www.sortlist.com/app-development/armenia-am" target="_blank" class="badges1 mr-sm-4 mb-4 mb-sm-0">
+                            <img class="img-fluid" src="./assets/images/badges/badge1.svg" alt="Badge1">
+                        </a>
+                        <a href="https://www.appfutura.com/app-developers/armenia" target="_blank" class="badges2">
+                            <img class="img-fluid" src="./assets/images/badges/badge2.png" alt="Badge2">
+                        </a>
                         <div class="col-md-12 mt-4">
                             <p class="text-center m-0 cr">Copyright AimTech - {{ new Date().getFullYear() }}. All Rights Reserved.</p>
                         </div>
@@ -330,10 +320,10 @@
     .footer {
         background: #0e3b61;
     }
-    .footer img {
-        height: 18px;
+    footer a img {
+        height: 18px!important;
     }
-    .footer .img-cont{
+    footer .img-cont{
         height: 30px;
         width: 30px;
         background: #0789c4;
@@ -422,5 +412,10 @@
     .navbar-dark .router-link-exact-active{
         color: #fff!important;
     }
-
+    footer a.badges1 img{
+        height: 80px!important;
+    }
+    footer a.badges2 img{
+        height: 120px!important;
+    }
 </style>
