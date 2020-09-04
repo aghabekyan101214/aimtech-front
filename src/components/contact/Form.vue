@@ -14,7 +14,8 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <label for="full_name" class="inp">
-                                            <input type="text" v-model="full_name" id="full_name" ref="full_name" placeholder=" " required>
+                                            <input type="text" v-model="full_name" id="full_name" ref="full_name"
+                                                   placeholder=" " required>
                                             <span class="label">Full Name</span>
                                             <span class="border"/>
                                         </label>
@@ -22,7 +23,8 @@
 
                                     <div class="col-md-6">
                                         <label for="phone" class="inp">
-                                            <input type="text" v-model="phone" id="phone" ref="phone" placeholder=" " required>
+                                            <input type="text" v-model="phone" id="phone" ref="phone" placeholder=" "
+                                                   required>
                                             <span class="label">Phone Number</span>
                                             <span class="border"/>
                                         </label>
@@ -30,7 +32,8 @@
 
                                     <div class="col-md-6">
                                         <label for="company" class="inp">
-                                            <input type="text" v-model="company" ref="company" id="company" placeholder=" ">
+                                            <input type="text" v-model="company" ref="company" id="company"
+                                                   placeholder=" ">
                                             <span class="label">Company Name</span>
                                             <span class="border"/>
                                         </label>
@@ -53,7 +56,9 @@
                                     </div>
 
                                     <div class="send-part col-md-12 mt-5">
-                                        <button class="rounded-btn send btn btn-primary" ref="rounded_button" @click="send">Send Message</button>
+                                        <button class="rounded-btn send btn btn-primary" ref="rounded_button"
+                                                @click="send">Send Message
+                                        </button>
                                         <img src="/loader.gif" class="send-loader" ref="loader" alt="Loader">
                                     </div>
                                 </div>
@@ -84,17 +89,17 @@
         },
         methods: {
             send() {
-                if(this.full_name == "") {
+                if (this.full_name == "") {
                     this.$refs.full_name.style.borderBottom = "2px solid red";
                     return;
-                } else if(this.phone == "") {
+                } else if (this.phone == "") {
                     this.$refs.phone.style.borderBottom = "2px solid red";
                     return;
-                } else if(this.email == "") {
+                } else if (this.email == "") {
                     this.$refs.email.style.borderBottom = "2px solid red";
                     return;
-                } else if(this.email != "") {
-                    if(this.validateEmail(this.email) === false) {
+                } else if (this.email != "") {
+                    if (this.validateEmail(this.email) === false) {
                         this.$refs.email.style.borderBottom = "2px solid red";
                         return;
                     }
@@ -102,13 +107,18 @@
                 this.$refs.rounded_button.style.display = "none";
                 this.$refs.loader.style.display = "block";
 
-                axios.post('https://emails.aimtech.am', {
-                    full_name: this.full_name,
-                    phone: this.phone,
-                    company: this.company,
-                    email: this.email,
-                    message: this.message,
-                })
+                axios.post('https://emails.aimtech.am/index.php', {
+                        full_name: this.full_name,
+                        phone: this.phone,
+                        company: this.company,
+                        email: this.email,
+                        message: this.message,
+                    },
+                    {
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+                        }
+                    })
                     .then(function (response) {
                         alert("Message Sent Successfully");
                         location.reload();
@@ -119,8 +129,8 @@
                     });
 
             },
-            validateEmail(mail){
-                if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)){
+            validateEmail(mail) {
+                if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
                     return true;
                 }
 
@@ -131,20 +141,22 @@
 </script>
 
 <style scoped>
-    .map-section{
+    .map-section {
         width: 100%;
         background-image: url("../../assets/images/contact/map.svg");
         background-size: cover;
         position: relative;
         background-repeat: no-repeat;
     }
-    .layout-op{
+
+    .layout-op {
         height: 100%;
         width: 100%;
         opacity: .9;
         background-color: #fff;
     }
-    .contact-cont{
+
+    .contact-cont {
         background-color: #fff;
         width: 100%;
         position: relative;
@@ -153,19 +165,22 @@
         margin: 0 auto;
     }
 
-    .dots{
+    .dots {
         height: 13px;
         width: 13px;
         background-color: #37a7e0;
         border-radius: 50%;
     }
+
     .send-loader {
         height: 30px;
         display: none;
     }
-    label{
+
+    label {
         max-width: 100% !important;
     }
+
     /*input part*/
     .inp {
         position: relative;
@@ -185,6 +200,7 @@
         transform-origin: 0 0;
         transition: all 0.2s ease;
     }
+
     .inp .border {
         position: absolute;
         bottom: 0;
@@ -196,6 +212,7 @@
         transform-origin: 0 0;
         transition: all 0.15s ease;
     }
+
     .inp input, .inp textarea {
         -webkit-appearance: none;
         width: 100%;
@@ -212,27 +229,33 @@
         transition: all 0.15s ease;
         overflow: hidden;
     }
-    .inp input:not(:placeholder-shown) + span{
+
+    .inp input:not(:placeholder-shown) + span {
         color: #0c4a80;
         transform: translateY(-20px) scale(0.75);
     }
+
     .inp input:focus, .inp textarea:focus {
         background: none;
         outline: none;
     }
+
     .inp input:focus + span, .inp textarea:focus + span {
         color: #0c4a80;
         transform: translateY(-10px) scale(0.75);
     }
-    .inp input:focus + span + .border{
+
+    .inp input:focus + span + .border {
         transform: scaleX(1);
     }
-    .contact-icons-cont{
+
+    .contact-icons-cont {
         background-color: #0c4a80;
         border-radius: 0 85px 5px 0;
         box-shadow: 1px 5px 18px grey;
     }
-    .contact-icons-cont h3, .contact-icons-cont p{
-        color: white!important;
+
+    .contact-icons-cont h3, .contact-icons-cont p {
+        color: white !important;
     }
 </style>
