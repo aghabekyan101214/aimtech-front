@@ -16,18 +16,20 @@
                                         <label for="full_name" class="inp">
                                             <input type="text" v-model="full_name" id="full_name" ref="full_name"
                                                    placeholder=" " required>
-                                            <span class="label">Full Name</span>
+                                            <span class="label">Full Name <i class="text-danger">&#42;</i></span>
                                             <span class="border"/>
                                         </label>
+                                        <p class="text-danger" ref="err_name"></p>
                                     </div>
 
                                     <div class="col-md-6">
                                         <label for="phone" class="inp">
                                             <input type="text" v-model="phone" id="phone" ref="phone" placeholder=" "
                                                    required>
-                                            <span class="label">Phone Number</span>
+                                            <span class="label">Phone Number <i class="text-danger">&#42;</i></span>
                                             <span class="border"/>
                                         </label>
+                                        <p class="text-danger" ref="err_phone"></p>
                                     </div>
 
                                     <div class="col-md-6">
@@ -42,14 +44,16 @@
                                     <div class="col-md-6">
                                         <label for="email" class="inp">
                                             <input type="email" v-model="email" ref="email" id="email" placeholder=" ">
-                                            <span class="label">Email</span>
+                                            <span class="label">Email <i class="text-danger">&#42;</i></span>
                                             <span class="border"/>
                                         </label>
+                                        <p class="text-danger" ref="err_email"></p>
                                     </div>
 
                                     <div class="col-md-12">
                                         <label for="message" class="inp message">
-                                            <textarea v-model="message" ref="message" name="message" id="message"/>
+                                            <textarea v-model="message" ref="message" name="message" id="message"
+                                                      placeholder=" "/>
                                             <span class="label">Message</span>
                                             <span class="border"/>
                                         </label>
@@ -60,6 +64,9 @@
                                                 @click="send">Send Message
                                         </button>
                                         <img src="/loader.gif" class="send-loader" ref="loader" alt="Loader">
+                                    </div>
+                                    <div class="resp text-uppercase" ref="resp">
+                                        thank you for your message. it has been sent!
                                     </div>
                                 </div>
                             </div>
@@ -91,21 +98,32 @@
             send() {
                 if (this.full_name == "") {
                     this.$refs.full_name.style.borderBottom = "2px solid red";
+                    this.$refs.err_name.innerHTML = "Full name field must required!";
+                    this.$refs.err_name.style.display = "block";
                     return;
                 } else if (this.phone == "") {
                     this.$refs.phone.style.borderBottom = "2px solid red";
+                    this.$refs.err_phone.innerHTML = "Phone number field must required!";
                     return;
                 } else if (this.email == "") {
                     this.$refs.email.style.borderBottom = "2px solid red";
+                    this.$refs.err_email.innerHTML = "Email field must required!";
                     return;
                 } else if (this.email != "") {
                     if (this.validateEmail(this.email) === false) {
                         this.$refs.email.style.borderBottom = "2px solid red";
+                        this.$refs.err_email.innerHTML = "Please enter valid email!";
                         return;
                     }
                 }
                 this.$refs.rounded_button.style.display = "none";
                 this.$refs.loader.style.display = "block";
+                this.$refs.err_email.style.display = "none";
+                this.$refs.err_name.style.display = "none";
+                this.$refs.err_phone.style.display = "none";
+                this.$refs.full_name.style.borderBottom = "2px solid #0c4a80";
+                this.$refs.phone.style.borderBottom = "2px solid #0c4a80";
+                this.$refs.email.style.borderBottom = "2px solid #0c4a80";
 
                 axios.post('https://emails.aimtech.am/index.php', {
                         full_name: this.full_name,
@@ -119,11 +137,18 @@
                             'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
                         }
                     })
-                    .then(function (response) {
-                        alert("Message Sent Successfully");
-                        location.reload();
+                    .then((response) => {
+                        this.$refs.resp.style.display = "block";
+                        this.$refs.rounded_button.style.display = "block";
+                        this.$refs.loader.style.display = "none";
+                        this.full_name = "";
+                        this.phone = "";
+                        this.company = "";
+                        this.email = "";
+                        this.message = "";
+                        setTimeout(() => { this.$refs.resp.style.display = "none"; }, 20000)
                     })
-                    .catch(function (error) {
+                    .catch((error) => {
                         this.$refs.rounded_button.style.display = "block";
                         this.$refs.loader.style.display = "none";
                     });
@@ -230,7 +255,7 @@
         overflow: hidden;
     }
 
-    .inp input:not(:placeholder-shown) + span {
+    .inp input:not(:placeholder-shown) + span, .inp textarea:not(:placeholder-shown) + span {
         color: #0c4a80;
         transform: translateY(-20px) scale(0.75);
     }
@@ -257,5 +282,14 @@
 
     .contact-icons-cont h3, .contact-icons-cont p {
         color: white !important;
+    }
+
+    .resp {
+        display: none;
+        border: 2px solid green;
+        padding: 5px 10px;
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
     }
 </style>
