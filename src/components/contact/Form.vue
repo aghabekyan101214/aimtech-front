@@ -121,9 +121,9 @@
                 this.$refs.err_email.style.display = "none";
                 this.$refs.err_name.style.display = "none";
                 this.$refs.err_phone.style.display = "none";
-                this.$refs.full_name.style.borderBottom = "2px solid #0c4a80";
-                this.$refs.phone.style.borderBottom = "2px solid #0c4a80";
-                this.$refs.email.style.borderBottom = "2px solid #0c4a80";
+                this.$refs.full_name.style.borderBottom = "2px solid #2fa9de";
+                this.$refs.phone.style.borderBottom = "2px solid #2fa9de";
+                this.$refs.email.style.borderBottom = "2px solid #2fa9de";
 
                 axios.post('https://emails.aimtech.am/index.php', {
                         full_name: this.full_name,
@@ -232,7 +232,7 @@
         left: 0;
         height: 2px;
         width: 100%;
-        background: #07f;
+        background: #2fa9de;
         transform: scaleX(0);
         transform-origin: 0 0;
         transition: all 0.15s ease;
@@ -247,7 +247,7 @@
         height: 48px;
         font-size: 16px;
         font-weight: 500;
-        border-bottom: 2px solid #0c4a80;
+        border-bottom: 2px solid #2fa9de;
         background: none;
         border-radius: 0;
         color: #0c4a80;
@@ -286,7 +286,7 @@
 
     .resp {
         display: none;
-        border: 2px solid green;
+        border: 2px solid #2fa9de;
         padding: 5px 10px;
         margin-top: 20px;
         width: 100%;
