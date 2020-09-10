@@ -15,21 +15,21 @@
                                     <div class="col-md-6">
                                         <label for="full_name" class="inp">
                                             <input type="text" v-model="full_name" id="full_name" ref="full_name"
-                                                   placeholder=" " required>
+                                                   placeholder=" " required @input="checkExist($event)">
                                             <span class="label">Full Name <i class="text-danger">&#42;</i></span>
                                             <span class="border"/>
                                         </label>
-                                        <p class="text-danger" ref="err_name"></p>
+                                        <p class="text-danger error_full_name" ref="err_name"></p>
                                     </div>
 
                                     <div class="col-md-6">
                                         <label for="phone" class="inp">
                                             <input type="text" v-model="phone" id="phone" ref="phone" placeholder=" "
-                                                   required>
+                                                   required @input="checkExist($event)">
                                             <span class="label">Phone Number <i class="text-danger">&#42;</i></span>
                                             <span class="border"/>
                                         </label>
-                                        <p class="text-danger" ref="err_phone"></p>
+                                        <p class="text-danger error_phone" ref="err_phone"></p>
                                     </div>
 
                                     <div class="col-md-6">
@@ -43,11 +43,11 @@
 
                                     <div class="col-md-6">
                                         <label for="email" class="inp">
-                                            <input type="email" v-model="email" ref="email" id="email" placeholder=" ">
+                                            <input type="email" v-model="email" ref="email" id="email" placeholder=" " @input="checkExist($event)">
                                             <span class="label">Email <i class="text-danger">&#42;</i></span>
                                             <span class="border"/>
                                         </label>
-                                        <p class="text-danger" ref="err_email"></p>
+                                        <p class="text-danger error_email" ref="err_email"></p>
                                     </div>
 
                                     <div class="col-md-12">
@@ -95,6 +95,11 @@
             }
         },
         methods: {
+            checkExist(event){
+                var id = event.target.id;
+                document.querySelector("#"+id).style.borderBottom = "2px solid #2fa9de";
+                document.querySelector(".error_"+id).style.display = "none";
+            },
             send() {
                 if (this.full_name == "") {
                     this.$refs.full_name.style.borderBottom = "2px solid red";
@@ -166,6 +171,10 @@
 </script>
 
 <style scoped>
+    input:not(:empty) {
+        border: 1px solid green;
+    }
+
     .map-section {
         width: 100%;
         background-image: url("../../assets/images/contact/map.svg");
